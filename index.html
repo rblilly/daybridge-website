@@ -526,24 +526,22 @@
     });
 
     // Form validation
-    document.querySelector('form[name="waitlist"]').addEventListener('submit', function(e) {
-      let valid = true;
-      this.querySelectorAll('.wl-pill-value').forEach(hidden => {
-        const group = hidden.previousElementSibling;
-        const errorMsg = hidden.parentElement.querySelector('.wl-pill-error');
-        if (!hidden.value) {
-          valid = false;
-          group.classList.add('error');
-          if (errorMsg) errorMsg.classList.add('visible');
-        }
+    const waitlistForm = document.querySelector('form[name="waitlist"]');
+    if (waitlistForm) {
+      waitlistForm.addEventListener('submit', function(e) {
+        let valid = true;
+        this.querySelectorAll('.wl-pill-value').forEach(hidden => {
+          const group = hidden.previousElementSibling;
+          const errorMsg = hidden.parentElement.querySelector('.wl-pill-error');
+          if (!hidden.value) {
+            valid = false;
+            group.classList.add('error');
+            if (errorMsg) errorMsg.classList.add('visible');
+          }
+        });
+        if (!valid) e.preventDefault();
       });
-      if (!valid) e.preventDefault();
-    });
-
-    // Nav toggle
-    document.querySelector('.nav-toggle').addEventListener('click', function() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
+    }
   </script>
 
 </body>
