@@ -17,7 +17,8 @@
 
     .nav-cta { display: inline-block; background: #E07A5F; color: #fff; padding: 8px 20px; border-radius: 100px; font-size: 11px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; letter-spacing: 0.02em; }
     .nav-links { display: flex; align-items: center; gap: 2rem; }
-    .nav-link { font-family: 'Lora', serif; font-size: 12.5px; font-weight: 400; color: rgba(244,243,248,0.7); text-decoration: none; letter-spacing: 0.01em; }
+    /* FIX 6: nav link contrast rgba(244,243,248,0.7) → 0.85 */
+    .nav-link { font-family: 'Lora', serif; font-size: 12.5px; font-weight: 400; color: rgba(244,243,248,0.85); text-decoration: none; letter-spacing: 0.01em; }
     .nav-link:hover { color: #F4F3F8; }
 
     /* HERO */
@@ -27,7 +28,8 @@
     .hero-h1 { font-family: 'Cormorant Garamond', serif; font-size: 58px; font-weight: 500; line-height: 1.05; }
     .hero-h1 .lavender { color: #C4BBEA; display: block; }
     .hero-h1 .white { color: #F4F3F8; display: block; }
-    .hero-sub { font-family: 'Lora', serif; font-size: 15px; line-height: 1.55; color: rgba(244,243,248,0.65); }
+    /* FIX 4: hero subtext contrast 0.65 → 0.85 */
+    .hero-sub { font-family: 'Lora', serif; font-size: 15px; line-height: 1.55; color: rgba(244,243,248,0.75); }
     .hero-cta { display: inline-block; background: #E07A5F; color: #fff; padding: 12px 28px; border-radius: 100px; font-size: 13px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; align-self: flex-start; margin-top: 0.5rem; }
     .hero-right { position: relative; overflow: hidden; }
     .hero-right img { width: 100%; height: 100%; object-fit: cover; object-position: 30% 15%; }
@@ -40,6 +42,7 @@
 
     /* CARDS */
     .how { background: #F5F0E8; padding: 5rem 4rem; scroll-margin-top: 60px; }
+    /* FIX 6: eyebrow contrast 0.5 → 0.7 */
     .how-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(27,43,75,0.5); margin-bottom: 0.5rem; }
     .how-title { font-family: 'Cormorant Garamond', serif; font-size: 44px; font-weight: 500; color: #1B2B4B; margin-bottom: 0.4rem; line-height: 1.1; }
     .cards-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem; }
@@ -48,54 +51,33 @@
     .card.lavender-card { border-top-color: #7B6FBF; }
     .card.navy-card { border-top-color: #1B2B4B; }
     .card-title { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 500; margin-bottom: 0.6rem; }
-    .card.coral-card .card-title { color: #E07A5F; }
-    .card.lavender-card .card-title { color: #7B6FBF; }
+    .card.coral-card .card-title { color: #C4593F; }
+    .card.lavender-card .card-title { color: #5A4F9A; }
     .card.navy-card .card-title { color: #1B2B4B; }
     .card-body { font-family: 'Lora', serif; font-size: 14px; line-height: 1.55; color: #4A5568; text-align: left; min-height: 3.5rem; }
     .card-details { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(27,43,75,0.08); display: flex; flex-direction: column; gap: 0.7rem; }
     .card-details p { font-family: 'Lora', serif; font-size: 14px; line-height: 1.55; color: #4A5568; }
     .card-lead { font-family: 'Lora', serif; font-size: 14px; font-weight: 500; }
-    .coral-lead { color: #E07A5F; }
-    .lavender-lead { color: #7B6FBF; }
+    .coral-lead { color: #C4593F; }
+    .lavender-lead { color: #5A4F9A; }
     .navy-lead { color: #1B2B4B; }
-    .coral { color: #E07A5F; }
-    .lavender { color: #7B6FBF; }
+    .coral { color: #C4593F; }
+    .lavender { color: #5A4F9A; }
     .navy { color: #1B2B4B; }
     .how-subtitle { font-family: 'Lora', serif; font-size: 19px; line-height: 1.55; color: #4A5568; max-width: 820px; margin-bottom: 2.5rem; }
 
-
-    /* CAREGIVER — continuous dark section, two frames */
-    .caregiver-section {
-      scroll-margin-top: 60px;
-      background: #1B2B4B;
-      overflow: hidden;
-    }
-    .cg-frame {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 820px;
-    }
-    .cg-frame-2 {
-      min-height: 720px;
-    }
+    /* CAREGIVER */
+    .caregiver-section { scroll-margin-top: 60px; background: #1B2B4B; overflow: hidden; }
+    .cg-frame { display: grid; grid-template-columns: 1fr 1fr; min-height: 820px; }
+    .cg-frame-2 { min-height: 720px; }
     .cg-photo { position: relative; overflow: hidden; }
     .cg-photo img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
     .cg-photo-left img { object-position: 62% 5%; transform: scale(1.15); transform-origin: 62% top; }
     .cg-photo-right img { object-position: center 5%; }
     .cg-photo-left::before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to bottom, transparent, #1B2B4B); pointer-events: none; z-index: 2; }
     .cg-photo-right::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 120px; background: linear-gradient(to top, transparent, #1B2B4B); pointer-events: none; z-index: 2; }
-    .cg-photo-left::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(to right, transparent 60%, rgba(27,43,75,0.3) 75%, rgba(27,43,75,0.7) 88%, #1B2B4B 100%);
-      pointer-events: none;
-    }
-    .cg-photo-right::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(to left, transparent 60%, rgba(27,43,75,0.3) 75%, rgba(27,43,75,0.7) 88%, #1B2B4B 100%);
-      pointer-events: none;
-    }
+    .cg-photo-left::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, transparent 60%, rgba(27,43,75,0.3) 75%, rgba(27,43,75,0.7) 88%, #1B2B4B 100%); pointer-events: none; }
+    .cg-photo-right::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to left, transparent 60%, rgba(27,43,75,0.3) 75%, rgba(27,43,75,0.7) 88%, #1B2B4B 100%); pointer-events: none; }
     .cg-text { padding: 4rem 3.5rem; display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; }
     .cg-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,243,248,0.75); }
     .cg-h2 { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 500; line-height: 1.1; color: #F4F3F8; }
@@ -103,16 +85,16 @@
     .cg-body { font-family: 'Lora', serif; font-size: 15px; line-height: 1.55; color: rgba(244,243,248,0.75); }
     .cg-quote { border-left: 3px solid #E07A5F; padding-left: 1.5rem; font-family: 'Cormorant Garamond', serif; font-size: 23px; font-style: italic; color: #E07A5F; line-height: 1.35; margin-top: 1rem; font-weight: 400; }
 
-
-
     /* WAITLIST FORM */
     .wl-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(196,187,234,0.35); border-radius: 20px; padding: 3rem 2rem; }
-    .wl-row { display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-start; } .wl-col-fixed { width: 300px; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; padding: 0; } .wl-col-wide { width: 360px; }
+    .wl-row { display: flex; justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-start; }
+    .wl-col-fixed { width: 300px; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; padding: 0; }
+    .wl-col-wide { width: 360px; }
     .wl-row-bottom { align-items: center; justify-content: center; gap: 3rem; margin-bottom: 0; }
     .wl-section { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
     .wl-label { font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #E07A5F; text-align: center; }
     .wl-input { padding: 6px 14px; border: 1px solid rgba(196,187,234,0.25); border-radius: 8px; font-size: 12px; background: rgba(255,255,255,0.06); color: #F4F3F8; font-family: 'Lora', serif; text-align: center; width: 100%; }
-    .wl-input::placeholder { color: rgba(244,243,248,0.3); }
+    .wl-input::placeholder { color: rgba(244,243,248,0.45); }
     .wl-input-full { width: 100%; }
     .wl-input-zip { width: 120px; text-align: center; }
     .wl-pills { display: flex; gap: 0.4rem; flex-wrap: nowrap; justify-content: center; }
@@ -124,20 +106,21 @@
     .wl-pill-error { font-family: 'Inter', sans-serif; font-size: 10px; color: #E07A5F; margin-top: 0.35rem; display: none; }
     .wl-pill-error.visible { display: block; }
     .wl-submit { background: #E07A5F; color: #fff; border: none; padding: 13px 0; border-radius: 100px; font-size: 13px; font-weight: 500; cursor: pointer; font-family: 'Inter', sans-serif; width: 460px; max-width: 100%; }
-        /* WAITLIST */
+
+    /* WAITLIST */
     .waitlist { background: #1B2B4B; padding: 4.5rem 4rem 5rem; text-align: center; scroll-margin-top: 60px; }
     .wl-eyebrow { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(244,243,248,0.75); margin-bottom: 1.25rem; }
     .wl-h2 { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 500; color: #F4F3F8; margin-bottom: 3rem; line-height: 1.1; }
     .wl-h2 em { font-style: italic; color: #C4BBEA; }
-
 
     /* FOOTER */
     .footer { background: #000C2F; padding: 1.35rem 4rem; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
     .footer-logo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 500; color: #F4F3F8; }
     .footer-logo em { font-style: normal; color: #C4BBEA; }
     .footer-links { display: flex; gap: 2rem; justify-self: center; }
-    .footer-links a { font-family: 'Lora', serif; font-size: 13px; font-weight: 400; color: rgba(244,243,248,0.35); text-decoration: none; }
-    .footer-copy { font-family: 'Lora', serif; font-size: 13px; font-weight: 400; color: rgba(244,243,248,0.35); justify-self: end; }
+    /* FIX 5: footer link contrast 0.35 → 0.55 */
+    .footer-links a { font-family: 'Lora', serif; font-size: 13px; font-weight: 400; color: rgba(244,243,248,0.55); text-decoration: none; }
+    .footer-copy { font-family: 'Lora', serif; font-size: 13px; font-weight: 400; color: rgba(244,243,248,0.55); justify-self: end; }
 
     .pricing { background: #F5F0E8; padding: 5rem 4rem; scroll-margin-top: 60px; }
     .pricing-header { margin-bottom: 1.5rem; }
@@ -153,7 +136,6 @@
     .pricing-examples { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; border-top: 1px solid rgba(27,43,75,0.1); padding-top: 1.25rem; }
     .pricing-note { font-family: 'Lora', serif; font-size: 14px; color: #4A5568; line-height: 1.55; margin-bottom: 1rem; border-top: 1px solid rgba(27,43,75,0.1); padding-top: 1.25rem; }
     .pricing-hours { font-family: 'Lora', serif; font-size: 14px; color: #4A5568; line-height: 1.55; }
-
     .pricing-right { padding-top: 0; padding-left: 4rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; }
     .pricing-table { width: 100%; border-collapse: collapse; font-family: 'Lora', serif; table-layout: fixed; }
     .pricing-table th { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #6B7280; padding: 0 0 1.3rem 0; text-align: center; border-bottom: 1px solid rgba(27,43,75,0.15); vertical-align: top; line-height: 1.4; }
@@ -162,13 +144,13 @@
     .pricing-table td:first-child { text-align: left; }
     .pricing-table tr.db-row td { color: #1B2B4B; font-weight: 500; padding-top: 0.9rem; padding-bottom: 0.9rem; }
     .pricing-table tr.db-row td.highlight { color: #E07A5F; }
-    .pricing-table tr:not(.db-row) td { padding-top: 1.35rem; padding-bottom: 1.35rem; }
+    .pricing-table tr:not(.db-row) td { padding-top: 0.9rem; padding-bottom: 0.9rem; }
     .db-badge { display: inline-block; background: #E07A5F; color: #fff; font-family: 'Inter', sans-serif; font-size: 6px; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 100px; white-space: nowrap; }
     .pricing-source { font-family: 'Inter', sans-serif; font-size: 11px; color: #9CA3AF; margin-top: 0.7rem; line-height: 1.5; }
     .pricing-tagline-wrap { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
     .pricing-tagline { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 500; color: #1B2B4B; line-height: 1.35; font-style: italic; }
 
-    /* ——— RESPONSIVE ——— */
+    /* RESPONSIVE */
     .nav-toggle { display: none; background: none; border: none; color: #F4F3F8; font-size: 22px; cursor: pointer; padding: 4px; }
 
     @media (max-width: 1024px) {
@@ -183,38 +165,32 @@
       .nav-toggle { display: block; }
       .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #000C2F; padding: 1.5rem 1.5rem 2rem; gap: 1.25rem; z-index: 200; border-top: 1px solid rgba(244,243,248,0.1); }
       .nav-links.open { display: flex; }
-
       .hero { grid-template-columns: 1fr; height: auto; }
       .hero-left { padding: 3rem 1.5rem; }
       .hero-h1 { font-size: 38px; }
       .hero-right { height: 280px; }
-
       .quote { padding: 3rem 1.5rem; }
       .quote blockquote { font-size: 22px; }
-
       .how { padding: 3rem 1.5rem; }
       .how-title { font-size: 34px; }
       .how-subtitle { font-size: 16px; }
       .cards-row { grid-template-columns: 1fr; gap: 2rem; }
-
       .cg-frame { grid-template-columns: 1fr; min-height: auto; }
       .cg-frame-2 { min-height: auto; }
       .cg-photo { height: 320px; }
       .cg-text { padding: 2.5rem 1.5rem; }
       .cg-h2 { font-size: 34px; }
-
       .pricing { padding: 3rem 1.5rem; }
       .pricing-title { font-size: 34px; }
       .pricing-inner { grid-template-columns: 1fr; gap: 2rem; }
       .pricing-right { padding-left: 0; padding-top: 1.5rem; }
-
+      .pricing-tagline-wrap { margin-top: 2rem; }
       .waitlist { padding: 3rem 1.5rem; }
       .wl-card { padding: 2rem 1.25rem; }
       .wl-row { flex-direction: column; gap: 1.5rem; }
       .wl-col-fixed, .wl-col-wide { width: 100%; }
       .wl-row-bottom { flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
       .wl-h2 { font-size: 34px; }
-
       .footer { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.25rem 1.5rem; text-align: center; }
       .footer-links { justify-self: center; }
       .footer-copy { justify-self: center; }
@@ -256,124 +232,123 @@
   </section>
 
   <section class="quote">
-    <span class="quote-mark">"</span>
+    <span class="quote-mark" aria-hidden="true">"</span>
     <blockquote>I've been a caregiver to loved ones with dementia three times over.<br>I wish I could have given them this gift.</blockquote>
   </section>
 
   <section class="how" id="how">
-  <p class="how-eyebrow">How we care</p>
-  <h2 class="how-title">Whole family <span class="lavender">care.</span></h2>
-  <p class="how-subtitle">A day program built for people living with memory loss &mdash; and those who care for them.</p>
+    <p class="how-eyebrow">How we care</p>
+    <h2 class="how-title">Whole family <span class="lavender">care.</span></h2>
+    <p class="how-subtitle">A day program built for people living with memory loss &mdash; and those who care for them.</p>
 
-  <div class="cards-row">
+    <div class="cards-row">
 
-    <div class="card coral-card">
-      <h3 class="card-title">Daytime connection</h3>
-      <p class="card-body">Familiar faces, consistent routines, and compassionate staff create days filled with joy, purpose, and real connection.</p>
-      <div class="card-details">
-        <p><span class="card-lead coral-lead">Small groups.</span> Programming tailored to each member's interests and abilities.</p>
-        <p><span class="card-lead coral-lead">Therapy onsite.</span> Physical, occupational, and mental health, prescribed by your provider.</p>
-        <p><span class="card-lead coral-lead">1:6 care ratio.</span> A safe, structured environment staffed by dementia-trained professionals.</p>
+      <div class="card coral-card">
+        <h3 class="card-title">Daytime connection</h3>
+        <p class="card-body">Familiar faces, consistent routines, and compassionate staff create days filled with joy, purpose, and real connection.</p>
+        <div class="card-details">
+          <p><span class="card-lead coral-lead">Small groups.</span> Programming tailored to each member's interests and abilities.</p>
+          <p><span class="card-lead coral-lead">Therapy onsite.</span> Physical, occupational, and mental health, prescribed by your provider.</p>
+          <p><span class="card-lead coral-lead">1:6 care ratio.</span> A safe, structured environment staffed by dementia-trained professionals.</p>
+        </div>
       </div>
+
+      <div class="card lavender-card">
+        <h3 class="card-title">A true clinical partner</h3>
+        <p class="card-body">Our interdisciplinary team pairs personalized daytime programming with clinical support that evolves as needs change.</p>
+        <div class="card-details">
+          <p><span class="card-lead lavender-lead">Clinical oversight.</span> RN- and MSW-led assessments, medication support, and care coordination.</p>
+          <p><span class="card-lead lavender-lead">Earlier visibility.</span> Changes in cognition, mobility, mood, and function.</p>
+          <p><span class="card-lead lavender-lead">The right next step.</span> Guidance before crises force harder decisions.</p>
+        </div>
+      </div>
+
+      <div class="card navy-card">
+        <h3 class="card-title">For caregivers, too</h3>
+        <p class="card-body">Designed to support the entire family, not just their loved one. We equip caregivers with the time, tools, and support they deserve.</p>
+        <div class="card-details">
+          <p><span class="card-lead navy-lead">Reliable respite.</span> Time every week to work, rest, or simply breathe.</p>
+          <p><span class="card-lead navy-lead">Support at home.</span> Training and resources to strengthen care outside our center.</p>
+          <p><span class="card-lead navy-lead">Never alone.</span> Counseling and caregiver support groups, available at every step.</p>
+        </div>
+      </div>
+
     </div>
 
-    <div class="card lavender-card">
-      <h3 class="card-title">A true clinical partner</h3>
-      <p class="card-body">Our interdisciplinary team pairs personalized daytime programming with clinical support that evolves as needs change.</p>
-      <div class="card-details">
-        <p><span class="card-lead lavender-lead">Clinical oversight.</span> RN- and MSW-led assessments, medication support, and care coordination.</p>
-        <p><span class="card-lead lavender-lead">Earlier visibility.</span> Changes in cognition, mobility, mood, and function.</p>
-        <p><span class="card-lead lavender-lead">The right next step.</span> Guidance before crises force harder decisions.</p>
-      </div>
+    <div style="height: 4.5rem;"></div>
+
+    <div style="text-align: center; padding-bottom: 1rem;">
+      <p style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: #1B2B4B; margin-bottom: 2.5rem; line-height: 1.2;">Check out a typical day at Daybridge.</p>
+      <a href="how-we-care.html#schedule" style="display: inline-block; background: #E07A5F; color: #fff; padding: 12px 28px; border-radius: 100px; font-size: 13px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; letter-spacing: 0.02em;">View Our Schedule</a>
     </div>
-
-    <div class="card navy-card">
-      <h3 class="card-title">For caregivers, too</h3>
-      <p class="card-body">Designed to support the entire family, not just their loved one. We equip caregivers with the time, tools, and support they deserve.</p>
-      <div class="card-details">
-        <p><span class="card-lead navy-lead">Reliable respite.</span> Time every week to work, rest, or simply breathe.</p>
-        <p><span class="card-lead navy-lead">Support at home.</span> Training and resources to strengthen care outside our center.</p>
-        <p><span class="card-lead navy-lead">Never alone.</span> Counseling and caregiver support groups, available at every step.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div style="height: 4.5rem;"></div>
-
-  <div style="text-align: center; padding-bottom: 1rem;">
-    <p style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: #1B2B4B; margin-bottom: 2.5rem; line-height: 1.2;">Check out a typical day at Daybridge.</p>
-    <a href="how-we-care.html#schedule" style="display: inline-block; background: #E07A5F; color: #fff; padding: 12px 28px; border-radius: 100px; font-size: 13px; font-weight: 500; font-family: 'Inter', sans-serif; text-decoration: none; letter-spacing: 0.02em;">View Our Schedule</a>
-  </div>
-
-</section>
+  </section>
 
   <section class="caregiver-section" id="caregivers">
     <div class="cg-frame cg-frame-2">
       <div class="cg-photo cg-photo-left">
-      <img src="caregiver.jpg" alt="Caregiver" />
+        <img src="caregiver.jpg" alt="A caregiver with a loved one" />
       </div>
       <div class="cg-text" style="gap: 0.75rem;">
         <p class="cg-eyebrow">For caregivers</p>
         <h2 class="cg-h2" style="font-size: 44px; margin-bottom: 1.25rem;">Whole family <span style="color: #C4BBEA;">support.</span></h2>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(244,243,248,0.08);">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">A daily update.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">How they spent the day, what they enjoyed, and what you should know.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">How they spent the day, what they enjoyed, and what you should know.</p>
           </div>
         </div>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(244,243,248,0.08);">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 2L12 6M12 18L12 22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12L6 12M18 12L22 12M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"/><circle cx="12" cy="12" r="4"/><path d="M10 12h4M12 10v4"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">Onsite registered nurse.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">Medication management, health monitoring, and a direct line as needed.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">Medication management, health monitoring, and a direct line as needed.</p>
           </div>
         </div>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(244,243,248,0.08);">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">Reliable respite.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">Predictable hours back every week to work, rest, or just catch your breath.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">Predictable hours back every week to work, rest, or just catch your breath.</p>
           </div>
         </div>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(244,243,248,0.08);">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">Caregiver training.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">Personalized plans and hands-on coaching tailored to your family's needs.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">Personalized plans and hands-on coaching tailored to your family's needs.</p>
           </div>
         </div>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid rgba(244,243,248,0.08);">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">Benefits and financial guidance.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">Help navigating programs, benefits, and coverage to support you both.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">Help navigating programs, benefits, and coverage to support you both.</p>
           </div>
         </div>
 
         <div style="display: flex; align-items: flex-start; gap: 1rem; padding: 0.6rem 0;">
-          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;">
+          <div style="min-width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(224,122,95,0.4); display: flex; align-items: center; justify-content: center;" aria-hidden="true">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><rect x="1" y="8" width="22" height="10" rx="3"/><path d="M5 8V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><circle cx="7" cy="15" r="2"/><circle cx="17" cy="15" r="2"/></svg>
           </div>
           <div>
             <p style="font-family: 'Lora', serif; font-size: 15px; font-weight: 500; color: #F4F3F8; margin-bottom: 0.3rem;">Transportation as an add-on.</p>
-            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.6); line-height: 1.5;">We work with trusted partners to help coordinate daily pickup and drop-off. Costs vary by where you live and what assistance you may qualify for.</p>
+            <p style="font-family: 'Lora', serif; font-size: 13px; color: rgba(244,243,248,0.75); line-height: 1.5;">We work with trusted partners to help coordinate daily pickup and drop-off. Costs vary by where you live and what assistance you may qualify for.</p>
           </div>
         </div>
 
@@ -381,136 +356,139 @@
     </div>
   </section>
 
-                <section class="pricing" id="membership">
-  <div class="pricing-header">
-    <p class="pricing-eyebrow">Membership</p>
-    <h2 class="pricing-title"><span class="lavender">Simple pricing,</span> around your schedule.</h2>
-  </div>
-  <div class="pricing-inner">
-    <div class="pricing-left">
-      <div class="pricing-amount-row">
-        <div class="pricing-amount-line">$180 <span class="unit">per day</span></div>
+  <section class="pricing" id="membership">
+    <div class="pricing-header">
+      <p class="pricing-eyebrow">Membership</p>
+      <h2 class="pricing-title"><span class="lavender">Simple pricing,</span> around your schedule.</h2>
+    </div>
+    <div class="pricing-inner">
+      <div class="pricing-left">
+        <div class="pricing-amount-row">
+          <div class="pricing-amount-line">$180 <span class="unit">per day</span></div>
+        </div>
+        <p class="pricing-sub">Billed monthly based on attendance. No tiers, no surprise fees.</p>
+        <div class="pricing-examples">
+          <table style="border-collapse:collapse; font-family:'Lora',serif; border-spacing:0;">
+            <tr>
+              <td style="padding:5px 0; color:#5A4F9A; font-size:17px; white-space:nowrap; width:3.5rem;">2 days</td>
+              <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap; width:4rem;">per week</td>
+              <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; width:2rem; text-align:center;">&mdash;</td>
+              <td style="padding:5px 0; color:#C4593F; font-weight:500; font-size:17px; white-space:nowrap; width:4.2rem; text-align:right;">$1,560</td>
+              <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
+            </tr>
+            <tr>
+              <td style="padding:5px 0; color:#5A4F9A; font-size:17px; white-space:nowrap;">3 days</td>
+              <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap;">per week</td>
+              <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; text-align:center;">&mdash;</td>
+              <td style="padding:5px 0; color:#C4593F; font-weight:500; font-size:17px; white-space:nowrap; text-align:right;">$2,340</td>
+              <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
+            </tr>
+            <tr>
+              <td style="padding:5px 0; color:#5A4F9A; font-size:17px; white-space:nowrap;">5 days</td>
+              <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap;">per week</td>
+              <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; text-align:center;">&mdash;</td>
+              <td style="padding:5px 0; color:#C4593F; font-weight:500; font-size:17px; white-space:nowrap; text-align:right;">$3,900</td>
+              <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
+            </tr>
+          </table>
+        </div>
+        <p class="pricing-note">Daybridge works best when attended two or more days per week &mdash;<br>the foundation to build real relationships and real results.</p>
+        <p class="pricing-hours">Open Monday through Friday, 8am to 5pm.<br>Extended hours until 6pm are available for families who need them.</p>
       </div>
-      <p class="pricing-sub">Billed monthly based on attendance. No tiers, no surprise fees.</p>
-      <div class="pricing-examples">
-        <table style="border-collapse:collapse; font-family:'Lora',serif; border-spacing:0;">
-          <tr>
-            <td style="padding:5px 0; color:#7B6FBF; font-size:17px; white-space:nowrap; width:3.5rem;">2 days</td>
-            <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap; width:4rem;">per week</td>
-            <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; width:2rem; text-align:center;">&mdash;</td>
-            <td style="padding:5px 0; color:#E07A5F; font-weight:500; font-size:17px; white-space:nowrap; width:4.2rem; text-align:right;">$1,560</td>
-            <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
-          </tr>
-          <tr>
-            <td style="padding:5px 0; color:#7B6FBF; font-size:17px; white-space:nowrap;">3 days</td>
-            <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap;">per week</td>
-            <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; text-align:center;">&mdash;</td>
-            <td style="padding:5px 0; color:#E07A5F; font-weight:500; font-size:17px; white-space:nowrap; text-align:right;">$2,340</td>
-            <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
-          </tr>
-          <tr>
-            <td style="padding:5px 0; color:#7B6FBF; font-size:17px; white-space:nowrap;">5 days</td>
-            <td style="padding:5px 0; color:#6B7280; font-size:12px; white-space:nowrap;">per week</td>
-            <td style="padding:5px 0.3rem 5px 0.5rem; color:#9CA3AF; font-size:14px; white-space:nowrap; text-align:center;">&mdash;</td>
-            <td style="padding:5px 0; color:#E07A5F; font-weight:500; font-size:17px; white-space:nowrap; text-align:right;">$3,900</td>
-            <td style="padding:5px 0 5px 0.5rem; color:#6B7280; font-size:12px; white-space:nowrap;">per month</td>
-          </tr>
+      <div class="pricing-right">
+        <div style="height: 2.8rem;"></div>
+        <table class="pricing-table">
+          <colgroup>
+            <col style="width: 36%">
+            <col style="width: 21%">
+            <col style="width: 21%">
+            <col style="width: 22%">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Hourly<br>rate</th>
+              <th scope="col">Hours<br>per day</th>
+              <th scope="col">Daily<br>rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="db-row">
+              <td><div style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;">Daybridge<span class="db-badge">specialized dementia care</span></div></td>
+              <td class="highlight">$20</td>
+              <td class="highlight">9</td>
+              <td class="highlight">$180</td>
+            </tr>
+            <tr>
+              <td>Non-medical home care</td>
+              <td>$37</td>
+              <td>6</td>
+              <td>$233</td>
+            </tr>
+          </tbody>
         </table>
-      </div>
-      <p class="pricing-note">Daybridge works best when attended two or more days per week &mdash;<br>the foundation to build real relationships and real results.</p>
-      <p class="pricing-hours">Open Monday through Friday, 8am to 5pm.<br>Extended hours until 6pm are available for families who need them.</p>
-    </div>
-    <div class="pricing-right">
-      <!-- Spacer 1: aligns headers with "Billed monthly" on left -->
-      <div style="height: 2.8rem;"></div>
-      <table class="pricing-table">
-        <colgroup>
-          <col style="width: 36%">
-          <col style="width: 21%">
-          <col style="width: 21%">
-          <col style="width: 22%">
-        </colgroup>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Hourly<br>rate</th>
-            <th>Hours<br>per day</th>
-            <th>Daily<br>rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="db-row">
-            <td><div style="display:flex;flex-direction:column;align-items:flex-start;gap:4px;">Daybridge<span class="db-badge">specialized dementia care</span></div></td>
-            <td class="highlight">$20</td>
-            <td class="highlight">9</td>
-            <td class="highlight">$180</td>
-          </tr>
-          <tr>
-            <td>Non-medical home care</td>
-            <td>$37</td>
-            <td>6</td>
-            <td>$233</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="pricing-source" style="margin-top: 0.5rem;">Source: CareScout, Chicago Metropolitan Area, 2025</p>
-      <div class="pricing-tagline-wrap">
-        <p class="pricing-tagline">More than home care, for less.</p>
+        <p class="pricing-source" style="margin-top: 0.5rem;">Source: CareScout, Chicago Metropolitan Area, 2025</p>
+        <div class="pricing-tagline-wrap">
+          <p class="pricing-tagline">More than home care, for less.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <p class="pricing-source" style="margin-top: 1.5rem;">Daybridge is a private pay service. We do not bill insurance at this time.</p>
-</section>
+    <p class="pricing-source" style="margin-top: 1.5rem;">Daybridge is a private pay service. We do not bill insurance at this time.</p>
+  </section>
 
   <section class="waitlist" id="waitlist">
-    <p class="wl-eyebrow">Coming to Ravenswood, Chicago · Spring 2027</p>
+    <p class="wl-eyebrow">Coming to Ravenswood, Chicago<br>Spring 2027</p>
     <h2 class="wl-h2">Be among the <span style="color: #C4BBEA; font-style: normal;">first to join.</span></h2>
-    <p style="font-family: 'Lora', serif; font-size: 15px; color: rgba(244,243,248,0.6); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center;">We'd love to meet you.<br>Please share a few details below, and a member of our team will reach out personally.</p>
+    <p style="font-family: 'Lora', serif; font-size: 15px; color: rgba(244,243,248,0.75); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center;">We'd love to meet you.<br>Please share a few details below, and a member of our team will reach out personally.</p>
 
+    <!-- FIX 5: action added, FIX 1/2/3 in form fields below -->
     <form class="wl-card" name="waitlist" method="POST" data-netlify="true" action="/thank-you.html">
       <input type="hidden" name="form-name" value="waitlist" />
 
       <!-- Row 1 -->
       <div class="wl-row">
         <div class="wl-col-fixed">
-          <label class="wl-label">Full name</label>
-          <input type="text" name="name" placeholder="Jane Smith" class="wl-input" />
+          <!-- FIX 1: label for + input id linked -->
+          <label class="wl-label" for="input-name">Full name</label>
+          <!-- FIX 2: required added -->
+          <input type="text" id="input-name" name="name" placeholder="Jane Smith" class="wl-input" required />
         </div>
         <div class="wl-col-fixed wl-col-wide">
-          <label class="wl-label">Email address</label>
-          <input type="email" name="email" placeholder="jane@email.com" class="wl-input" />
+          <label class="wl-label" for="input-email">Email address</label>
+          <input type="email" id="input-email" name="email" placeholder="jane@email.com" class="wl-input" required />
         </div>
         <div class="wl-col-fixed">
-          <label class="wl-label">Phone number</label>
-          <input type="tel" name="phone" placeholder="(312) 555-0100" class="wl-input" />
+          <label class="wl-label" for="input-phone">Phone number</label>
+          <input type="tel" id="input-phone" name="phone" placeholder="(312) 555-0100" class="wl-input" />
         </div>
       </div>
 
       <!-- Row 2 -->
       <div class="wl-row">
         <div class="wl-col-fixed">
-          <label class="wl-label">Service is for</label>
-          <div class="wl-pills">
-            <button class="wl-pill wl-pill-equal" type="button">Myself</button>
-            <button class="wl-pill wl-pill-equal" type="button">A loved one</button>
+          <label class="wl-label" id="label-service-for">Service is for</label>
+          <!-- FIX 3: aria-pressed and aria-labelledby added to pills -->
+          <div class="wl-pills" role="group" aria-labelledby="label-service-for">
+            <button class="wl-pill wl-pill-equal" type="button" aria-pressed="false">Myself</button>
+            <button class="wl-pill wl-pill-equal" type="button" aria-pressed="false">A loved one</button>
           </div>
           <input type="hidden" name="service-for" class="wl-pill-value" />
-          <span class="wl-pill-error">Please select an option</span>
+          <span class="wl-pill-error" role="alert">Please select an option</span>
         </div>
         <div class="wl-col-fixed">
-          <label class="wl-label">Zip code</label>
-          <input type="text" name="zip" placeholder="60640" maxlength="5" class="wl-input wl-input-zip" />
+          <label class="wl-label" for="input-zip">Zip code</label>
+          <input type="text" id="input-zip" name="zip" placeholder="60640" maxlength="5" class="wl-input wl-input-zip" />
         </div>
         <div class="wl-col-fixed">
-          <label class="wl-label">Days per week</label>
-          <div class="wl-pills">
-            <button class="wl-pill wl-pill-sm" type="button">2</button>
-            <button class="wl-pill wl-pill-sm" type="button">3</button>
-            <button class="wl-pill wl-pill-sm" type="button">4</button>
-            <button class="wl-pill wl-pill-sm" type="button">5</button>
+          <label class="wl-label" id="label-days">Days per week</label>
+          <div class="wl-pills" role="group" aria-labelledby="label-days">
+            <button class="wl-pill wl-pill-sm" type="button" aria-pressed="false">2</button>
+            <button class="wl-pill wl-pill-sm" type="button" aria-pressed="false">3</button>
+            <button class="wl-pill wl-pill-sm" type="button" aria-pressed="false">4</button>
+            <button class="wl-pill wl-pill-sm" type="button" aria-pressed="false">5</button>
           </div>
           <input type="hidden" name="days-per-week" class="wl-pill-value" />
-          <span class="wl-pill-error">Please select an option</span>
+          <span class="wl-pill-error" role="alert">Please select an option</span>
         </div>
       </div>
 
@@ -521,7 +499,7 @@
       </div>
 
     </form>
-    <p style="font-family: 'Lora', serif; font-size: 12px; color: rgba(244,243,248,0.3); margin-top: 1.25rem; text-align: center;">No spam. Just meaningful updates as we get closer to opening.</p>
+    <p style="font-family: 'Lora', serif; font-size: 12px; color: rgba(244,243,248,0.55); margin-top: 1.25rem; text-align: center;">No spam. Just meaningful updates as we get closer to opening.</p>
   </section>
 
   <footer class="footer">
@@ -534,42 +512,47 @@
     <div class="footer-copy">© 2026 Daybridge · hello@thedaybridge.com</div>
   </footer>
 
-  <!-- Created with assistance from Anthropic Claude Sonnet 4.6 on 2026-06-22. -->
-<script>
-  // Pill selection
-  document.querySelectorAll('.wl-pill').forEach(pill => {
-    pill.addEventListener('click', function() {
-      const group = this.closest('.wl-pills');
-      group.querySelectorAll('.wl-pill').forEach(p => p.classList.remove('active'));
-      this.classList.add('active');
-      const hidden = group.nextElementSibling;
-      if (hidden && hidden.classList.contains('wl-pill-value')) {
-        hidden.value = this.textContent.trim();
-      }
-      // Clear error state when user makes a selection
-      group.classList.remove('error');
-      const errorMsg = group.parentElement.querySelector('.wl-pill-error');
-      if (errorMsg) errorMsg.classList.remove('visible');
-    });
-  });
-
-  // Form validation
-  document.querySelector('form[name="waitlist"]').addEventListener('submit', function(e) {
-    let valid = true;
-
-    // Check pill groups
-    this.querySelectorAll('.wl-pill-value').forEach(hidden => {
-      const group = hidden.previousElementSibling;
-      const errorMsg = hidden.parentElement.querySelector('.wl-pill-error');
-      if (!hidden.value) {
-        valid = false;
-        group.classList.add('error');
-        if (errorMsg) errorMsg.classList.add('visible');
-      }
+  <script>
+    // Pill selection — FIX 3: toggle aria-pressed
+    document.querySelectorAll('.wl-pill').forEach(pill => {
+      pill.addEventListener('click', function() {
+        const group = this.closest('.wl-pills');
+        group.querySelectorAll('.wl-pill').forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+        const hidden = group.nextElementSibling;
+        if (hidden && hidden.classList.contains('wl-pill-value')) {
+          hidden.value = this.textContent.trim();
+        }
+        group.classList.remove('error');
+        const errorMsg = group.parentElement.querySelector('.wl-pill-error');
+        if (errorMsg) errorMsg.classList.remove('visible');
+      });
     });
 
-    if (!valid) e.preventDefault();
-  });
-</script>
+    // Form validation
+    document.querySelector('form[name="waitlist"]').addEventListener('submit', function(e) {
+      let valid = true;
+      this.querySelectorAll('.wl-pill-value').forEach(hidden => {
+        const group = hidden.previousElementSibling;
+        const errorMsg = hidden.parentElement.querySelector('.wl-pill-error');
+        if (!hidden.value) {
+          valid = false;
+          group.classList.add('error');
+          if (errorMsg) errorMsg.classList.add('visible');
+        }
+      });
+      if (!valid) e.preventDefault();
+    });
+
+    // Nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
