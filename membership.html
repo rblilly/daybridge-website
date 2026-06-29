@@ -43,10 +43,10 @@
     .pricing-table td:first-child { text-align: left; }
     .pricing-table tr.db-row td { color: #1B2B4B; font-weight: 500; padding-top: 0.9rem; padding-bottom: 0.9rem; }
     .pricing-table tr.db-row td.highlight { color: #E07A5F; }
-    .pricing-table tr:not(.db-row) td { padding-top: 1.35rem; padding-bottom: 1.35rem; }
+    .pricing-table tr:not(.db-row) td { padding-top: 0.9rem; padding-bottom: 0.9rem; }
     .db-badge { display: inline-block; background: #E07A5F; color: #fff; font-family: 'Inter', sans-serif; font-size: 6px; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 7px; border-radius: 100px; white-space: nowrap; }
     .pricing-source { font-family: 'Inter', sans-serif; font-size: 11px; color: #9CA3AF; margin-top: 0.7rem; line-height: 1.5; }
-    .pricing-tagline-wrap { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
+    .pricing-tagline-wrap { margin-top: auto; padding-top: 2rem; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
     .pricing-tagline { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 500; color: #1B2B4B; line-height: 1.35; font-style: italic; }
 
     /* WAITLIST CTA STRIP */
@@ -78,6 +78,7 @@
       .pricing-title { font-size: 34px; }
       .pricing-inner { grid-template-columns: 1fr; gap: 2rem; }
       .pricing-right { padding-left: 0; padding-top: 1.5rem; }
+      .pricing-tagline-wrap { margin-top: 2rem; }
       .cta-strip { padding: 3rem 1.5rem; }
       .cta-strip h2 { font-size: 30px; }
       .footer { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.25rem 1.5rem; text-align: center; }
@@ -138,7 +139,7 @@
             </tr>
           </table>
         </div>
-        <p class="pricing-note">Daybridge works best when attended two or more days per week &mdash;<br>the foundation to build real relationships and real results.</p>
+        <p class="pricing-note">Daybridge works best when attended two or more days per week &mdash; the foundation to build real relationships and real results.</p>
         <p class="pricing-hours">Open Monday through Friday, 8am to 5pm.<br>Extended hours until 6pm are available for families who need them.</p>
       </div>
       <div class="pricing-right">
@@ -166,7 +167,7 @@
               <td class="highlight">$180</td>
             </tr>
             <tr>
-              <td>Non-medical home care</td>
+              <td>Home health aide</td>
               <td>$37</td>
               <td>6</td>
               <td>$233</td>
@@ -198,12 +199,6 @@
     </div>
     <div class="footer-copy">© 2026 Daybridge · hello@thedaybridge.com</div>
   </footer>
-
-  <script>
-    document.querySelector('.nav-toggle').addEventListener('click', function() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
-  </script>
 
 </body>
 </html>
