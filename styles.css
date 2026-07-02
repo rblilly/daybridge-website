@@ -1,24 +1,24 @@
 /* ============================================================
-   DAYBRIDGE — styles.css
+   DAYBRIDGE â€” styles.css
    One file controls the look of every page.
 
    TO SWAP COLORS LATER:
    Update the hex values in Section 1 only.
-   Every page updates automatically — nothing else to touch.
+   Every page updates automatically â€” nothing else to touch.
    ============================================================ */
 
 
 /* ============================================================
-   1. COLOR TOKENS  ← THE ONLY PLACE YOU CHANGE COLORS
+   1. COLOR TOKENS  â† THE ONLY PLACE YOU CHANGE COLORS
    ============================================================ */
 :root {
   /* Core brand palette */
   --color-coral:       #E07A5F;   /* primary CTA, buttons, coral accents */
-  --color-coral-dark:  #C4593F;   /* coral on cream — darker for text legibility */
+  --color-coral-dark:  #C4593F;   /* coral on cream â€” darker for text legibility */
   --color-navy:        #000C2F;   /* header, footer backgrounds */
   --color-navy-body:   #1B2B4B;   /* body text, section backgrounds */
 
-  /* Lavender — two values, one per background type */
+  /* Lavender â€” two values, one per background type */
   --color-lav-on-cream: #6B5C93;  /* lavender text/accents on cream backgrounds */
   --color-lav-on-dark:  #C4BBEA;  /* lavender text/accents on navy backgrounds */
 
@@ -39,7 +39,7 @@
 
 
 /* ============================================================
-   2. FONT TOKENS  ← SWAP FONTS HERE WHEN READY
+   2. FONT TOKENS  â† SWAP FONTS HERE WHEN READY
    ============================================================ */
 :root {
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -47,7 +47,7 @@
   --font-nav:     'Lora', Georgia, serif;
 }
 
-/* Google Fonts load — update this import when swapping fonts */
+/* Google Fonts load â€” update this import when swapping fonts */
 /* Current: Cormorant Garamond (display) + Inter (body) + Lora (nav/body) */
 /* To switch to Fraunces + Atkinson Hyperlegible:
    1. Replace the @import URL below
@@ -308,7 +308,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 
 /* ============================================================
-   8. HOW WE CARE — section + cards
+   8. HOW WE CARE â€” section + cards
    (used on index.html AND how-we-care.html)
    ============================================================ */
 .how {
@@ -1272,7 +1272,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 
 /* ============================================================
-   17. PREVIOUSLY INLINE STYLES — now properly classed
+   17. PREVIOUSLY INLINE STYLES â€” now properly classed
    ============================================================ */
 
 /* Caregiver text block spacing */
@@ -1281,6 +1281,93 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* FAQ inline link */
 .link-coral         { color: var(--color-coral-dark); }
+
+/* FAQ two-column layout */
+.faq-inner {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.faq-list { width: 100%; }
+
+.faq-sub {
+  font-family: var(--font-nav);
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--color-text-body);
+  max-width: 820px;
+  margin-bottom: 2.5rem;
+}
+
+/* FAQ answer list styles */
+.faq-answer p { margin: 0 0 0.65rem; }
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer ul { margin: 0.4rem 0 0.65rem 1.25rem; padding: 0; }
+.faq-answer ul:last-child { margin-bottom: 0; }
+.faq-answer li { margin-bottom: 0.1rem; }
+.faq-answer strong { font-weight: 500; color: var(--color-navy-body); }
+
+/* FAQ sidebar */
+.faq-aside {
+  background: var(--color-navy-body);
+  border-radius: 12px;
+  padding: 2rem;
+  position: sticky;
+  top: 110px;
+}
+
+.faq-aside-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text-light);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.faq-aside-body {
+  font-family: var(--font-nav);
+  font-size: 13px;
+  line-height: 1.75;
+  color: var(--color-text-light-75);
+  margin-bottom: 1.5rem;
+}
+
+.faq-aside-btn {
+  display: block;
+  text-align: center;
+  background: var(--color-coral);
+  color: var(--color-white);
+  padding: 9px 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: background 0.15s;
+}
+
+.faq-aside-btn:hover { background: var(--color-coral-dark); }
+
+.faq-aside-email {
+  font-family: var(--font-nav);
+  font-size: 12px;
+  color: var(--color-text-light-55);
+  text-align: center;
+}
+
+.faq-aside-email a {
+  color: var(--color-lav-on-dark);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .faq-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .faq-aside { position: static; }
+}
 
 /* Hero second line spacing + button alignment */
 .hero-sub-spaced    { margin-top: 1.25rem; }
@@ -1353,7 +1440,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .pricing-source-bottom  { margin-top: 1.5rem; }
 .pricing-tagline-wrap   { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
 
-/* Pricing table colgroup — column widths */
+/* Pricing table colgroup â€” column widths */
 .pt-col-name   { width: 36%; }
 .pt-col-hourly { width: 21%; }
 .pt-col-hours  { width: 21%; }
