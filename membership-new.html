@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Membership — Daybridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html"><img src="logo.png" alt="Daybridge" style="height:36px;" /></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+    <div class="nav-links" id="nav-links">
+      <a href="about.html"       class="nav-link">About</a>
+      <a href="how-we-care.html" class="nav-link">How we care</a>
+      <a href="caregivers.html"  class="nav-link">For caregivers</a>
+      <a href="membership.html"  class="nav-link active">Membership</a>
+      <a href="faq.html"         class="nav-link">FAQ</a>
+      <a href="index.html#waitlist" class="nav-cta">Join the Waitlist</a>
+    </div>
+  </nav>
+
+  <section class="pricing" id="membership">
+    <div class="pricing-header">
+      <p class="pricing-eyebrow">Membership</p>
+      <h2 class="pricing-title"><span class="lavender">Simple pricing,</span> around your schedule.</h2>
+    </div>
+    <div class="pricing-inner">
+
+      <div class="pricing-left">
+        <div class="pricing-amount-line">$180 <span class="unit">per day</span></div>
+        <p class="pricing-sub">Billed monthly based on attendance. No tiers, no surprise fees.</p>
+        <div class="pricing-examples">
+          <table class="pe-table">
+            <tr>
+              <td class="pe-days">2 days</td>
+              <td class="pe-unit">per week</td>
+              <td class="pe-dash">&mdash;</td>
+              <td class="pe-amount">$1,560</td>
+              <td class="pe-freq">per month</td>
+            </tr>
+            <tr>
+              <td class="pe-days">3 days</td>
+              <td class="pe-unit">per week</td>
+              <td class="pe-dash">&mdash;</td>
+              <td class="pe-amount">$2,340</td>
+              <td class="pe-freq">per month</td>
+            </tr>
+            <tr>
+              <td class="pe-days">5 days</td>
+              <td class="pe-unit">per week</td>
+              <td class="pe-dash">&mdash;</td>
+              <td class="pe-amount">$3,900</td>
+              <td class="pe-freq">per month</td>
+            </tr>
+          </table>
+        </div>
+        <p class="pricing-note">Daybridge works best when attended two or more days per week, laying the foundation to build real relationships and real results.</p>
+        <p class="pricing-hours">Open Monday through Friday, 8am to 5pm.<br>Extended hours until 6pm are available for families who need them.</p>
+      </div>
+
+      <div class="pricing-right">
+        <div class="pricing-right-spacer"></div>
+        <table class="pricing-table">
+          <colgroup>
+            <col class="pt-col-name">
+            <col class="pt-col-hourly">
+            <col class="pt-col-hours">
+            <col class="pt-col-daily">
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Hourly<br>rate</th>
+              <th scope="col">Hours<br>per day</th>
+              <th scope="col">Daily<br>rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="db-row">
+              <td><div class="db-name-cell">Daybridge<span class="db-badge">specialized dementia care</span></div></td>
+              <td class="highlight">$20</td>
+              <td class="highlight">9</td>
+              <td class="highlight">$180</td>
+            </tr>
+            <tr>
+              <td>Home health aide</td>
+              <td>$37</td>
+              <td>6</td>
+              <td>$233</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="pricing-source pricing-source-top">Source: CareScout, Chicago Metropolitan Area, 2025</p>
+        <div class="pricing-tagline-wrap">
+          <p class="pricing-tagline">More than home care, for less.</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="pricing-source pricing-source-bottom">Daybridge is private pay. We're happy to help you explore coverage options.</p>
+  </section>
+
+  <footer class="footer">
+    <a href="index.html"><img src="logo.png" alt="Daybridge" style="height:36px;" /></a>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="mailto:hello@thedaybridge.com">Contact</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-copy">© 2026 Daybridge · hello@thedaybridge.com</div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle'),n=document.getElementById('nav-links');
+    if(t&&n){t.addEventListener('click',function(){const o=n.classList.toggle('open');this.setAttribute('aria-expanded',o);this.innerHTML=o?'&#10005;':'&#9776;';});}
+  </script>
+</body>
+</html>
