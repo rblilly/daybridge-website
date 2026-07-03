@@ -1280,7 +1280,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .pricing-right-spacer   { height: 2.8rem; }
 .pricing-source-top     { margin-top: 0.5rem; }
-.pricing-source-bottom  { margin-top: 1.5rem; }
+.pricing-source-bottom  { margin-top: 0.5rem; }
 .pricing-tagline-wrap   { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
 .pt-col-name   { width: 36%; }
 .pt-col-hourly { width: 21%; }
