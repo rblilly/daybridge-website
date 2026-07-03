@@ -629,7 +629,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ============================================================ */
 .pricing {
   background: var(--color-cream-mid);
-  padding: 5rem 4rem;
+  padding: 5rem 4rem 2rem;
   scroll-margin-top: 60px;
 }
 
