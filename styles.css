@@ -1404,17 +1404,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-nav);
   font-size: 11px;
   font-weight: 500;
-  color: var(--color-text-light);
-  background-color: var(--color-lav);
+  color: var(--color-navy);
+  background-color: var(--color-lav-on-dark);
   text-decoration: none;
   letter-spacing: 0.02em;
   padding: 0.45rem 1rem;
   border-radius: 999px;
-  transition: background-color 0.15s;
+  transition: background-color 0.15s, color 0.15s;
 }
 
 .nav-phone:hover {
-  background-color: var(--color-lav-dark);
+  background-color: var(--color-text-light);
 }
 
 .wl-call-note {
