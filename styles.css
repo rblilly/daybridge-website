@@ -88,7 +88,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   justify-content: space-between;
   padding: 1.35rem 4rem;
-  background: var(--color-navy);
+  background: #F5D48A;
   position: sticky;
   top: 0;
   z-index: 100;
