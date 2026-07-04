@@ -385,13 +385,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 4rem;
+  grid-template-rows: auto; /* let subgrid handle internal alignment */
 }
 
 .card {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
   border-top: 2px solid var(--color-border-med);
   padding-top: 1.25rem;
-  display: flex;
-  flex-direction: column;
 }
 
 .card.coral-card    { border-top-color: var(--color-coral); }
@@ -425,6 +426,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  align-self: end;
 }
 
 .card-details p {
