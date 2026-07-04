@@ -1108,6 +1108,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   gap: 0.4rem;
   margin-bottom: 0.15rem;
+  text-align: center;
 }
 
 .sign-off-title {
@@ -1116,6 +1117,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 400;
   color: rgba(27,43,75,0.5);
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .linkedin-link {
@@ -1140,7 +1142,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .sign-off-person {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
