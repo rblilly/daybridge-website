@@ -764,7 +764,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .pricing-table tr.db-row td.highlight { color: var(--color-coral); }
-.pricing-table tr:not(.db-row) td { padding-top: 1.35rem; padding-bottom: 1.35rem; }
+.pricing-table tr:not(.db-row) td { padding-top: 1.35rem; padding-bottom: 1.25rem; }
 
 .db-badge {
   display: inline-block;
