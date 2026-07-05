@@ -204,7 +204,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: grid;
   grid-template-columns: 4fr 7fr;
   height: 500px;
-  background: var(--color-navy-body);
+  background: #8BA7D4;
   overflow: hidden;
 }
 
