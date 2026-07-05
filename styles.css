@@ -20,7 +20,7 @@
 
   /* Lavender – two values, one per background type */
   --color-lav-on-cream: #6B5C93;  /* lavender text/accents on cream backgrounds */
-  --color-lav-on-dark:  #C4BBEA;  /* lavender text/accents on navy backgrounds */
+  --color-lav-on-dark:  #FDF6D8;  /* lavender text/accents on navy backgrounds */
 
   /* Neutral surfaces */
   --color-cream:       #FAF7F1;   /* main page background */
@@ -204,7 +204,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: grid;
   grid-template-columns: 4fr 7fr;
   height: 500px;
-  background:#7B9FE0;
+  background: var(--color-navy-body);
   overflow: hidden;
 }
 
@@ -1427,7 +1427,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 11px;
   font-weight: 500;
   color: var(--color-navy);
-  background-color: #8BA7D4;
+  background-color: var(--color-lav-on-dark);
   text-decoration: none;
   letter-spacing: 0.02em;
   padding: 0.45rem 1rem;
@@ -1436,7 +1436,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav-phone:hover {
-  background-color: #8BA7D4;
+  background-color: var(--color-text-light);
 }
 
 .wl-call-note {
