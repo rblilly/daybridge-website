@@ -1379,10 +1379,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-h1        { font-size: 38px; }
   .hero-right     { height: 280px; }
 
-  .how            { padding: 3rem 1.5rem; }
+  .how            { padding: 6rem 4rem; }
   .how-title      { font-size: 34px; }
   .how-subtitle   { font-size: 16px; }
-  .cards-row      { grid-template-columns: 1fr; gap: 2rem; }
+  .cards-row      { grid-template-columns: 1fr; gap: 5rem; }
 
   .cg-frame       { grid-template-columns: 1fr; min-height: auto; }
   .cg-frame-2     { min-height: auto; }
