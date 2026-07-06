@@ -274,7 +274,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    7. PROBLEM SECTION (index.html) — replaces quote/testimonial
    ============================================================ */
 .problem {
-  background: #FFFFFF;
+  background: #FDF6E3;
   padding: 3.5rem 4rem;
 }
 
