@@ -483,7 +483,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.25rem;
   overflow-y: auto;
 }
 
@@ -493,6 +493,74 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100vh;
 }
 
+.cg-new-text .cg-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-light-55);
+}
+
+.cg-new-text .cg-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 500;
+  color: var(--color-text-light);
+  line-height: 1.1;
+}
+
+.cg-new-text .cg-body {
+  font-family: var(--font-nav);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text-light-75);
+}
+
+.cg-new-text .cg-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.cg-new-text .cg-feature:last-of-type {
+  border-bottom: none;
+}
+
+.cg-new-text .cg-feature-icon {
+  min-width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(224,122,95,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cg-new-text .cg-feature-title {
+  font-family: var(--font-nav);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: 0.2rem;
+}
+
+.cg-new-text .cg-feature-desc {
+  font-family: var(--font-nav);
+  font-size: 14px;
+  color: var(--color-text-light-75);
+  line-height: 1.55;
+}
+
+.cg-new-text .btn-primary {
+  align-self: flex-start;
+  margin-top: 0.75rem;
+}
+
+/* Carousel */
 .cg-carousel {
   position: relative;
   width: 100%;
@@ -536,12 +604,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: none;
 }
 
-.cg-new-text .cg-eyebrow { color: var(--color-text-light-55); }
-.cg-new-text .cg-h2 { color: var(--color-text-light); }
-.cg-new-text .cg-body { color: var(--color-text-light-75); }
-.cg-new-text .cg-feature-title { color: var(--color-text-light); }
-.cg-new-text .cg-feature-desc { color: var(--color-text-light-75); }
-
 .cg-carousel-dot.active { background: var(--color-text-light); }
 
 @media (max-width: 768px) {
@@ -552,9 +614,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .cg-new-photo {
     position: relative;
     height: 320px;
+    order: -1;
   }
   .cg-new-text {
     padding: 3rem 1.5rem;
+    gap: 1rem;
+  }
+  .cg-new-text .cg-h2 {
+    font-size: 34px;
+  }
+  .cg-new-text .cg-body {
+    font-size: 15px;
   }
 }
 
