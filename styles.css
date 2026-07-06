@@ -1253,7 +1253,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .footer-logo {
   font-family: 'Fraunces', serif;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 600;
   color: var(--color-text-light);
   letter-spacing: 0.02em;
