@@ -242,6 +242,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    font-size: clamp(17px, 1.4vw, 19px);
   line-height: 1.7;
   color: var(--color-text-body);
+  text-wrap: balance;
 }
 
 .hero-right {
