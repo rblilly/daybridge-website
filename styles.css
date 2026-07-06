@@ -274,7 +274,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    7. PROBLEM SECTION (index.html) — replaces quote/testimonial
    ============================================================ */
 .problem {
-  background: var(--color-white);
+  background: #FFFFFF;
   padding: 3.5rem 4rem;
 }
 
@@ -1320,8 +1320,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .wl-submit-wrap   { display: flex; justify-content: center; }
 .wl-spam-note     { font-family: var(--font-nav); font-size: 12px; color: var(--color-text-light-55); margin-top: 1.25rem; text-align: center; }
 
-.cornflower {color: var(--color-cornflower);}
-
+.cornflower {
+  color: var(--color-cornflower);
+  white-space: nowrap;
+}
 
 /* ============================================================
    18. ACCESSIBILITY
