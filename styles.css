@@ -98,7 +98,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: 'Fraunces', serif;
   font-size: clamp(26px, 2.4vw, 30px);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 
