@@ -633,7 +633,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    10. PRICING / MEMBERSHIP
    ============================================================ */
 .pricing {
-  background: var(--color-cream-mid);
+  background: var(--color-linen);
   padding: 5rem 4rem 2rem;
   scroll-margin-top: 60px;
 }
