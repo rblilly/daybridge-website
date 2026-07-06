@@ -536,6 +536,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: none;
 }
 
+.cg-new-text .cg-eyebrow { color: var(--color-text-light-55); }
+.cg-new-text .cg-h2 { color: var(--color-text-light); }
+.cg-new-text .cg-body { color: var(--color-text-light-75); }
+.cg-new-text .cg-feature-title { color: var(--color-text-light); }
+.cg-new-text .cg-feature-desc { color: var(--color-text-light-75); }
+
 .cg-carousel-dot.active { background: var(--color-text-light); }
 
 @media (max-width: 768px) {
