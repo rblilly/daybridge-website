@@ -135,9 +135,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: inline-block;
   background: var(--color-coral);
   color: var(--color-white);
-  padding: 8px 20px;
+  padding: clamp(8px, 0.8vw, 10px) clamp(16px, 1.5vw, 22px);
   border-radius: 100px;
-  font-size: 11px;
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 500;
   font-family: var(--font-body);
   text-decoration: none;
@@ -1426,13 +1426,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ============================================================ */
 .nav-phone {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-cornflower);
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding: 8px 20px;
+  padding: clamp(8px, 0.8vw, 10px) clamp(16px, 1.5vw, 22px);
   border-radius: 999px;
   transition: background-color 0.15s;
   white-space: nowrap;
