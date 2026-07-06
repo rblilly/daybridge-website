@@ -202,7 +202,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ============================================================ */
 .hero {
   display: grid;
-  grid-template-columns: 4fr 7fr;
+  grid-template-columns: 5fr 6fr;
   height: auto;
   background: var(--color-linen);
   overflow: hidden;
