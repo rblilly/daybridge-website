@@ -116,7 +116,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .nav-link {
   font-family: var(--font-nav);
-  font-size: clamp(11px, 1vw, 12.5px);
+  font-size: clamp(12px, 1.1vw, 14px);
   font-weight: 400;
   color: rgba(27,43,75,0.7);
   text-decoration: none;
