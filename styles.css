@@ -1375,7 +1375,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 768px) {
   .nav            { padding: 1rem 1.5rem; position: relative; }
   .nav-toggle     { display: block; }
-  .nav-links      { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-linen); padding: 1.5rem 1.5rem 2rem; gap: 1.25rem; z-index: 200; border-top: 1px solid var(--color-border-light); }
+  .nav-links      { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #EDE8E0; padding: 1.5rem 1.5rem 2rem; gap: 1.25rem; z-index: 200; border-top: 1px solid var(--color-border-light); }
   .nav-links.open { display: flex; }
   .nav-link       {color: var(--color-navy); }
   .nav-link:hover {color: var(--color-cornflower); }
