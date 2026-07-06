@@ -13,28 +13,24 @@
    ============================================================ */
 :root {
   /* Core brand palette */
-  --color-coral:       #E07A5F;   /* primary CTA, buttons, coral accents */
-  --color-coral-dark:  #C4593F;   /* coral on cream – darker for text legibility */
-  --color-navy:        #000C2F;   /* header, footer backgrounds */
-  --color-navy-body:   #1B2B4B;   /* body text, section backgrounds */
-
-  /* Lavender – two values, one per background type */
-  --color-lav-on-cream: #6B5C93;  /* lavender text/accents on cream backgrounds */
-  --color-lav-on-dark:  #C4BBEA;  /* lavender text/accents on navy backgrounds */
+  --color-coral:       #E07A5F;   /* primary CTA, buttons */
+  --color-coral-dark:  #C4593F;   /* coral hover state */
+  --color-navy:        #1B2B4B;   /* footer, statement backgrounds */
+  --color-navy-body:   #1B2B4B;   /* body text */
+  --color-cornflower:  #4A6A9E;   /* logo, headline accent, secondary CTA */
+  --color-honey:       #E8B84B;   /* accent, waitlist headline */
 
   /* Neutral surfaces */
-  --color-cream:       #FAF7F1;   /* main page background */
-  --color-cream-mid:   #F5F0E8;   /* section alternate background */
-  --color-cream-deep:  #EBE6DA;   /* quote / deeper cream sections */
-  --color-text-body:   #4A5568;   /* body paragraph text */
-  --color-text-muted:  #6B7280;   /* secondary / muted text */
-  --color-text-light:  #F4F3F8;   /* text on dark backgrounds */
-  --color-text-light-75: rgba(244,243,248,0.75);
-  --color-text-light-55: rgba(244,243,248,0.55);
-  --color-white:       #FFFFFF;
+  --color-linen:       #FAF7F2;   /* main page background */
+  --color-white:       #FFFFFF;   /* second section background */
+  --color-text-body:   rgba(27,43,75,0.75);  /* body paragraph text */
+  --color-text-muted:  rgba(27,43,75,0.45);  /* eyebrows, secondary text */
+  --color-text-light:  #FAF7F2;   /* text on dark backgrounds */
+  --color-text-light-75: rgba(250,247,242,0.75);
+  --color-text-light-55: rgba(250,247,242,0.55);
   --color-border:      rgba(27,43,75,0.08);
   --color-border-med:  rgba(27,43,75,0.12);
-  --color-border-light: rgba(244,243,248,0.1);
+  --color-border-light: rgba(255,255,255,0.1);
 }
 
 
@@ -42,7 +38,7 @@
    2. FONT TOKENS  ← SWAP FONTS HERE WHEN READY
    ============================================================ */
 :root {
-  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Playfair Display', Georgia, serif;
   --font-body:    'Inter', system-ui, sans-serif;
   --font-nav:     'Lora', Georgia, serif;
 }
