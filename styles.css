@@ -316,12 +316,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .benefit {
-  border-top: 3px solid var(--color-cornflower);
+  border-top: 3px solid var(--color-honey);
   padding-top: 1.35rem;
 }
 
 .benefit.coral {
-  border-top-color: var(--color-coral);
+  border-top-color: var(--color-honey);
 }
 
 .benefit h3 {
