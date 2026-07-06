@@ -349,7 +349,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    8. HOW WE CARE – section + cards
    ============================================================ */
 .how {
-  background: var(--color-cream-mid);
+  background: var(--color-linen);
   padding: 5rem 4rem;
   scroll-margin-top: 60px;
 }
@@ -398,9 +398,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-top: 1.25rem;
 }
 
-.card.coral-card    { border-top-color: var(--color-coral); }
-.card.lavender-card { border-top-color: var(--color-lav-on-cream); }
-.card.navy-card     { border-top-color: var(--color-navy-body); }
+.card.coral-card { border-top-color: var(--color-coral); }
+.card.lavender-card { border-top-color: var(--color-cornflower); }
+.card.navy-card { border-top-color: var(--color-cornflower); }
 
 .card-title {
   font-family: var(--font-display);
@@ -409,9 +409,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 0.6rem;
 }
 
-.card.coral-card    .card-title { color: var(--color-coral-dark); }
-.card.lavender-card .card-title { color: var(--color-lav-on-cream); }
-.card.navy-card     .card-title { color: var(--color-navy-body); }
+.card.coral-card .card-title { color: var(--color-navy); }
+.card.lavender-card .card-title { color: var(--color-navy); }
+.card.navy-card .card-title { color: var(--color-navy); }
 
 .card-body {
   font-family: var(--font-nav);
@@ -441,8 +441,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .card-lead { font-weight: 500; }
 
-.coral-lead   { color: var(--color-coral-dark); }
-.lavender-lead{ color: var(--color-lav-on-cream); }
+.coral-lead { color: var(--color-cornflower); }
+.lavender-lead { color: var(--color-cornflower); }
 .navy-lead    { color: var(--color-navy-body); }
 
 .coral   { color: var(--color-coral-dark); }
