@@ -7,6 +7,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .cg-carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .cg-carousel-slide {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0;
+      transition: opacity 1.2s ease-in-out;
+    }
+    .cg-carousel-slide.active { opacity: 1; }
+    .cg-carousel-slide img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .cg-carousel-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    .cg-carousel-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: rgba(250,247,242,0.45);
+      cursor: pointer;
+      transition: background 0.3s;
+      border: none;
+    }
+    .cg-carousel-dot.active { background: #FAF7F2; }
+
+    .cg-new {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      background: var(--color-navy);
+    }
+
+    .cg-new-text {
+      padding: 6rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+      overflow-y: auto;
+    }
+
+    .cg-new-photo {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    @media (max-width: 768px) {
+      .cg-new {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .cg-new-photo {
+        position: relative;
+        height: 320px;
+      }
+      .cg-new-text {
+        padding: 3rem 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -15,99 +91,101 @@
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
     <div class="nav-links" id="nav-links">
       <a href="how-we-care.html" class="nav-link">How we care</a>
-      <a href="caregivers.html"  class="nav-link">For caregivers</a>
+      <a href="caregivers.html"  class="nav-link active">For caregivers</a>
       <a href="membership.html"  class="nav-link">Membership</a>
       <a href="faq.html"         class="nav-link">FAQ</a>
-      <a href="team.html"       class="nav-link">Team</a>
+      <a href="team.html"        class="nav-link">Team</a>
       <a href="index.html#waitlist" class="nav-cta">Join the Waitlist</a>
       <a href="tel:3125471718"   class="nav-phone">(312) 547-1718</a>
     </div>
   </nav>
 
-  <section class="caregiver-section" id="caregivers">
+  <section class="cg-new" id="caregivers">
 
-    <!-- Frame 1: Photo left, emotional intro right -->
-    <div class="cg-frame">
-      <div class="cg-photo cg-photo-left">
-        <img src="cp-top-left.jpg" alt="A caregiver sharing a quiet moment with a loved one" />
+    <!-- Left: text + features -->
+    <div class="cg-new-text">
+      <p class="cg-eyebrow">For the caregiver</p>
+      <h1 class="cg-h2">Support for you, too.</h1>
+      <p class="cg-body">Behind every person living with memory loss is a family member quietly reshaping daily life around caregiving. The responsibilities grow, the decisions get harder, and it's easy to feel like you're carrying it all yourself.</p>
+      <p class="cg-body">Daybridge supports caregivers just as intentionally as the people they love, so you can focus on being a daughter, son, wife, or husband again.</p>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">A daily update.</p>
+          <p class="cg-feature-desc">How they spent the day, what they enjoyed, and what you should know.</p>
+        </div>
       </div>
-      <div class="cg-text">
-        <p class="cg-eyebrow">For the caregiver</p>
-        <h2 class="cg-h2">Support for you, <span class="honey">too</h2>
-        <p class="cg-body">Behind every person living with memory loss is a family member quietly reshaping daily life around caregiving. The responsibilities grow, the decisions get harder, and it's easy to feel like you're carrying it all yourself.</p>
-        <blockquote class="cg-quote">"It's a progressive disease with no cure. I can't handle everything myself for much longer. If I go down, the whole house of cards crumbles."</blockquote>
-        <p class="cg-body">Daybridge helps you carry the demands of memory loss, without the guilt that you're not doing enough. We help take on the caregiving so you can focus on being a daughter, son, wife, or husband.</p>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 2L12 6M12 18L12 22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12L6 12M18 12L22 12M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"/><circle cx="12" cy="12" r="4"/><path d="M10 12h4M12 10v4"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">Onsite registered nurse.</p>
+          <p class="cg-feature-desc">Medication management, health monitoring, and a direct line as needed.</p>
+        </div>
       </div>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">Reliable respite.</p>
+          <p class="cg-feature-desc">Predictable hours back every week to work, rest, or just catch your breath.</p>
+        </div>
+      </div>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">Caregiver training.</p>
+          <p class="cg-feature-desc">Personalized plans and hands-on coaching tailored to your family's needs.</p>
+        </div>
+      </div>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">Benefits and financial guidance.</p>
+          <p class="cg-feature-desc">Help navigating programs, benefits, and coverage to support you both.</p>
+        </div>
+      </div>
+
+      <div class="cg-feature">
+        <div class="cg-feature-icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><rect x="1" y="8" width="22" height="10" rx="3"/><path d="M5 8V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><circle cx="7" cy="15" r="2"/><circle cx="17" cy="15" r="2"/></svg>
+        </div>
+        <div>
+          <p class="cg-feature-title">Transportation as an add-on.</p>
+          <p class="cg-feature-desc">We work with trusted partners to help coordinate daily pickup and drop-off. Costs vary by where you live and what assistance you may qualify for.</p>
+        </div>
+      </div>
+
+      <a href="index.html#waitlist" class="btn btn-primary" style="align-self: flex-start; margin-top: 1rem;">Join the Waitlist</a>
+
     </div>
 
-    <!-- Frame 2: Feature list left, photo right -->
-    <div class="cg-frame cg-frame-2">
-      <div class="cg-text cg-text-tight">
-        <h2 class="cg-h2 cg-h2-page">Whole family <em>support.</em></h2>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">A daily update.</p>
-            <p class="cg-feature-desc">How they spent the day, what they enjoyed, and what you should know.</p>
-          </div>
+    <!-- Right: photo carousel -->
+    <div class="cg-new-photo">
+      <div class="cg-carousel">
+        <div class="cg-carousel-slide active">
+          <img src="cp-top-left.jpg" alt="A caregiver sharing a quiet moment with a loved one" />
         </div>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 2L12 6M12 18L12 22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12L6 12M18 12L22 12M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"/><circle cx="12" cy="12" r="4"/><path d="M10 12h4M12 10v4"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">Onsite registered nurse.</p>
-            <p class="cg-feature-desc">Medication management, health monitoring, and a direct line as needed.</p>
-          </div>
+        <div class="cg-carousel-slide">
+          <img src="cp-bottom-right.jpg" alt="Family members finding support together" />
         </div>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">Reliable respite.</p>
-            <p class="cg-feature-desc">Predictable hours back every week to work, rest, or just catch your breath.</p>
-          </div>
+        <div class="cg-carousel-dots">
+          <button class="cg-carousel-dot active" onclick="cgGoTo(0)"></button>
+          <button class="cg-carousel-dot" onclick="cgGoTo(1)"></button>
         </div>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">Caregiver training.</p>
-            <p class="cg-feature-desc">Personalized plans and hands-on coaching tailored to your family's needs.</p>
-          </div>
-        </div>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">Benefits and financial guidance.</p>
-            <p class="cg-feature-desc">Help navigating programs, benefits, and coverage to support you both.</p>
-          </div>
-        </div>
-
-        <div class="cg-feature">
-          <div class="cg-feature-icon" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E07A5F" stroke-width="2" stroke-linecap="round"><rect x="1" y="8" width="22" height="10" rx="3"/><path d="M5 8V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><circle cx="7" cy="15" r="2"/><circle cx="17" cy="15" r="2"/></svg>
-          </div>
-          <div>
-            <p class="cg-feature-title">Transportation as an add-on.</p>
-            <p class="cg-feature-desc">We work with trusted partners to help coordinate daily pickup and drop-off. Costs vary by where you live and what assistance you may qualify for.</p>
-          </div>
-        </div>
-
-      </div>
-      <div class="cg-photo cg-photo-right">
-        <img src="cp-bottom-right.jpg" alt="Family members finding support together" />
       </div>
     </div>
 
@@ -133,6 +211,20 @@
         this.innerHTML = open ? '&#10005;' : '&#9776;';
       });
     }
+
+    let cgCurrent = 0;
+    const cgSlides = document.querySelectorAll('.cg-carousel-slide');
+    const cgDots = document.querySelectorAll('.cg-carousel-dot');
+
+    function cgGoTo(n) {
+      cgSlides[cgCurrent].classList.remove('active');
+      cgDots[cgCurrent].classList.remove('active');
+      cgCurrent = n;
+      cgSlides[cgCurrent].classList.add('active');
+      cgDots[cgCurrent].classList.add('active');
+    }
+
+    setInterval(() => cgGoTo((cgCurrent + 1) % cgSlides.length), 7000);
   </script>
 
 </body>
