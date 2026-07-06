@@ -1255,6 +1255,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: 'Fraunces', serif;
   font-size: 18px;
   font-weight: 600;
+  color: var(--color-text-light);
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -1328,6 +1329,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .cornflower {
   color: var(--color-cornflower);
+}
+
+.desktop-break { display: inline; }
+
+@media (max-width: 768px) {
+  .desktop-break { display: none; }
 }
 
 /* ============================================================
