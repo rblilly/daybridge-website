@@ -151,7 +151,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: none;
   background: none;
   border: none;
-  color: var(--color-text-light);
+  color: var(--color-navy);
   font-size: 22px;
   cursor: pointer;
   padding: 4px;
@@ -792,6 +792,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-align: center;
 }
 
+/* Membership page only — remove extra bottom space */
+.page-membership .pricing {
+  padding-bottom: 2rem;
+}
 
 /* ============================================================
    11. WAITLIST FORM
