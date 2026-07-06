@@ -369,7 +369,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 44px;
   font-weight: 500;
   color: var(--color-navy-body);
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
   line-height: 1.1;
 }
 
@@ -378,7 +378,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 19px;
   line-height: 1.55;
   color: var(--color-text-body);
-  max-width: 820px;
+  max-width: 100%;
   margin-bottom: 2.5rem;
 }
 
@@ -398,8 +398,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-top: 1.25rem;
 }
 
-.card.coral-card    { border-top-color: var(--color-coral); }
-.card.lavender-card { border-top-color: var(--color-cornflower); }
+.card.coral-card    { border-top-color: var(--color-honey); }
+.card.lavender-card { border-top-color: var(--color-honey); }
 .card.navy-card     { border-top-color: var(--color-honey); }
 
 .card-title {
