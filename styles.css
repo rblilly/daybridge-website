@@ -1150,7 +1150,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* ============================================================
    14. FAQ PAGE
    ============================================================ */
-.faq { background: var(--color-cream-mid); padding: 5rem 4rem; }
+.faq { background: var(--color-linen); padding: 5rem 4rem; }
 .faq-eyebrow { font-family: var(--font-body); font-size: 11px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(27,43,75,0.5); margin-bottom: 0.5rem; }
 .faq-title { font-family: var(--font-display); font-size: 44px; font-weight: 500; color: var(--color-navy-body); margin-bottom: 0.4rem; line-height: 1.1; }
 .faq-title .lavender { color: var(--color-lav-on-cream); }
