@@ -203,13 +203,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero {
   display: grid;
   grid-template-columns: 4fr 7fr;
-  height: 500px;
+  height: auto;
   background: var(--color-linen);
   overflow: hidden;
 }
 
 .hero-left {
-  padding: 5rem 4rem 4rem;
+  padding: 6rem 4rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
