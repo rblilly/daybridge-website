@@ -394,13 +394,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-row: span 3;
-  border-top: 2px solid var(--color-border-med);
+  border-top: 3px solid var(--color-border-med);
   padding-top: 1.25rem;
 }
 
 .card.coral-card    { border-top-color: var(--color-coral); }
-.card.lavender-card { border-top-color: var(--color-honey); }
-.card.navy-card     { border-top-color: var(--color-cornflower); }
+.card.lavender-card { border-top-color: var(--color-cornflower); }
+.card.navy-card     { border-top-color: var(--color-honey); }
 
 .card-title {
   font-family: var(--font-display);
