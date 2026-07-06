@@ -398,9 +398,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-top: 1.25rem;
 }
 
-.card.coral-card { border-top-color: var(--color-coral); }
-.card.lavender-card { border-top-color: var(--color-cornflower); }
-.card.navy-card { border-top-color: var(--color-cornflower); }
+.card.coral-card    { border-top-color: var(--color-coral); }
+.card.lavender-card { border-top-color: var(--color-honey); }
+.card.navy-card     { border-top-color: var(--color-cornflower); }
 
 .card-title {
   font-family: var(--font-display);
@@ -409,9 +409,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 0.6rem;
 }
 
-.card.coral-card .card-title { color: var(--color-navy); }
-.card.lavender-card .card-title { color: var(--color-navy); }
-.card.navy-card .card-title { color: var(--color-navy); }
+.card.coral-card    .card-title { color: var(--color-cornflower); }
+.card.lavender-card .card-title { color: var(--color-cornflower); }
+.card.navy-card     .card-title { color: var(--color-cornflower); }
 
 .card-body {
   font-family: var(--font-nav);
@@ -441,9 +441,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .card-lead { font-weight: 500; }
 
-.coral-lead { color: var(--color-cornflower); }
-.lavender-lead { color: var(--color-cornflower); }
-.navy-lead    { color: var(--color-navy-body); }
+.coral-lead    { color: var(--color-navy); font-weight: 700; }
+.lavender-lead { color: var(--color-navy); font-weight: 700; }
+.navy-lead     { color: var(--color-navy); font-weight: 700; }
 
 .coral   { color: var(--color-coral-dark); }
 .lavender{ color: var(--color-lav-on-cream); }
@@ -1314,11 +1314,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .db-name-cell  { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
 
 .wl-eyebrow-line2 { display: inline-block; margin-top: 0.35rem; }
-.wl-intro         { font-family: var(--font-nav); font-size: 15px; color: var(--color-text-light-75); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center; }
+.wl-intro         { font-family: var(--font-nav); font-size: clamp(15px, 1.2vw, 17px); color: var(--color-text-light-75); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center; }
 .wl-input-zip     { width: 120px; text-align: center; }
 .wl-form-spacer   { height: 0.75rem; }
 .wl-submit-wrap   { display: flex; justify-content: center; }
-.wl-spam-note     { font-family: var(--font-nav); font-size: 12px; color: var(--color-text-light-55); margin-top: 1.25rem; text-align: center; }
+.wl-spam-note     { font-family: var(--font-nav); font-size: 13px; color: var(--color-text-light-55); margin-top: 1.25rem; text-align: center; }
 
 .cornflower {
   color: var(--color-cornflower);
