@@ -96,7 +96,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .nav-logo {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 1.8vw, 26px);
+  font-size: clamp(26px, 2.4vw, 30px);
   font-weight: 600;
   color: var(--color-cornflower);
   letter-spacing: 0.06em;
@@ -1425,20 +1425,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    20. PHONE NUMBER
    ============================================================ */
 .nav-phone {
-  font-family: var(--font-nav);
+  font-family: var(--font-body);
   font-size: 11px;
   font-weight: 500;
-  color: var(--color-navy);
-  background-color: var(--color-lav-on-dark);
+  color: var(--color-white);
+  background-color: var(--color-cornflower);
   text-decoration: none;
   letter-spacing: 0.02em;
-  padding: 0.45rem 1rem;
+  padding: 8px 20px;
   border-radius: 999px;
-  transition: background-color 0.15s, color 0.15s;
+  transition: background-color 0.15s;
+  white-space: nowrap;
 }
 
 .nav-phone:hover {
-  background-color: var(--color-text-light);
+  background-color: var(--color-navy);
 }
 
 .wl-call-note {
@@ -1457,8 +1458,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .wl-call-note a:hover { color: var(--color-text-light); }
 
-@media (max-width: 768px) {
-  .nav-phone { display: none; }
+@media (max-width: 1100px) {
+  .nav-phone {
+    display: none;
+  }
 }
 /* ============================================================
    21. STATEMENT SECTION
