@@ -649,7 +649,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-display);
   font-size: 36px;
   font-weight: 500;
-  color: var(--color-coral);
+  color: var(--color-coral-dark);
   line-height: 1.2;
   white-space: nowrap;
 }
