@@ -41,7 +41,7 @@
    2. FONT TOKENS
    ============================================================ */
 :root {
-  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-display: Georgia, serif;
   --font-body:    'Inter', system-ui, sans-serif;
   --font-nav:     'Lora', Georgia, serif;
 }
