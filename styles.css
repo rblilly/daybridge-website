@@ -1166,14 +1166,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .faq-aside-email { font-family: var(--font-nav); font-size: 12px; color: var(--color-text-light-55); text-align: center; }
 .faq-aside-email a { color: var(--color-text-light-75); text-decoration: none; }
 
-@media (max-width: 768px) {
-  .faq { padding: 3rem 1.5rem; }
-  .faq-title { font-size: 34px; }
-  .faq-sub { font-size: 16px; }
-  .faq-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .faq-aside { position: static; }
-}
-
 
 /* ============================================================
    15. THANK YOU PAGE
@@ -1307,7 +1299,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .pricing-right-spacer   { height: 2.8rem; }
 .pricing-source-top     { margin-top: 0.5rem; }
 .pricing-source-bottom  { margin-top: 0.5rem; }
-.pricing-tagline-wrap   { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; text-align: center; }
+.pricing-tagline-wrap   { margin-top: auto; margin-bottom: 1rem; padding-bottom: 0.5rem; padding-top: 1.5rem; text-align: center; }
 .pt-col-name   { width: 36%; }
 .pt-col-hourly { width: 21%; }
 .pt-col-hours  { width: 21%; }
@@ -1363,6 +1355,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .schedule-grid { grid-template-columns: 160px 130px 1fr; }
 }
 
+@media  (max-width: 1100px) and (min-width: 769px) {
+  .nav-phone { display: none; }
+}
+
 @media (max-width: 860px) {
   .problem-grid { grid-template-columns: 1fr; gap: 3rem; }
   .problem      { padding: 4rem 2rem; }
@@ -1375,6 +1371,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .nav-links.open { display: flex; }
   .nav-link       { color: var(--color-navy); }
   .nav-link:hover { color: var(--color-cornflower); }
+  .pricing-tagline-wrap { padding-top: 2rem; }
+  .faq { padding: 3rem 1.5rem; }
+  .faq-title { font-size: 34px; }
+  .faq-sub { font-size: 16px; }
+  .faq-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .faq-aside { position: static; }
+}
 
   .nav-btns {
     flex-direction: column;
@@ -1436,7 +1439,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .footer          { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.25rem 1.5rem; text-align: center; }
   .footer-links    { justify-self: center; }
   .footer-copy     { justify-self: center; }
-}
 
 
 /* ============================================================
@@ -1457,9 +1459,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav-phone:hover { background-color: var(--color-navy); }
-
-@media (max-width: 1100px) and (min-width: 769px) {
-  .nav-phone { display: none; }
 
 
 /* ============================================================
