@@ -448,7 +448,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .card-lead     { font-weight: 500; }
-.card-lead { color: var(--color-coral); font-weight: 400; }
+.card-lead { color: var(--color-coral-dark); font-weight: 400; }
 
 .coral    { color: var(--color-coral-dark); }
 .lavender { color: var(--color-cornflower); }
