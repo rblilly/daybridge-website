@@ -1460,6 +1460,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 1100px) and (min-width: 769px) {
   .nav-phone { display: none; }
+}
 
 
 /* ============================================================
