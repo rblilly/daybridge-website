@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daybridge — Coming to Ravenswood, Chicago · Spring 2027</title>
+  <meta name="description" content="[PLACEHOLDER: Write your meta description here — aim for 150–160 characters describing Daybridge and your target audience.]" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+  <!-- NAV -->
   <nav class="nav">
     <a href="index.html" class="nav-logo"><span class="logo-day">Day</span><span class="logo-bridge">bridge</span></a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
@@ -18,9 +20,11 @@
       <a href="caregivers.html"  class="nav-link">For caregivers</a>
       <a href="membership.html"  class="nav-link">Membership</a>
       <a href="faq.html"         class="nav-link">FAQ</a>
-      <a href="team.html"       class="nav-link">Team</a>
-      <a href="#waitlist"        class="nav-cta">Join the Waitlist</a>
-      <a href="tel:3125471718"   class="nav-phone">(312) 547-1718</a>
+      <a href="team.html"        class="nav-link">Team</a>
+      <div class="nav-btns">
+        <a href="#waitlist"      class="nav-cta">Join the Waitlist</a>
+        <a href="tel:3125471718" class="nav-phone">(312) 547-1718</a>
+      </div>
     </div>
   </nav>
 
@@ -29,8 +33,8 @@
     <div class="hero-left">
       <p class="hero-eyebrow">Coming to Ravenswood, Chicago · Spring 2027</p>
       <h1 class="hero-h1">
-        <span class="navy">A bridge to </span>
-        <span class="cornflower">better days.</span>
+        <span class="navy">A bridge</span>
+        <span class="cornflower">to better days.</span>
       </h1>
       <p class="hero-sub">A daytime community designed for people living with memory loss. Where members thrive, and families rest assured knowing their loved one is exactly where they should be.</p>
       <p class="hero-sub hero-sub-spaced">Days at Daybridge. Evenings at home.</p>
@@ -43,27 +47,24 @@
   </section>
 
   <!-- PROBLEM -->
-<section class="problem">
-  <div class="problem-grid">
-
-    <div class="problem-left">
-      <h2>What if memory loss <span class="cornflower">didn't mean a smaller life?</span></h2>
-      <p>Too often, the world narrows. Daybridge opens it back up, with a research-based approach that delivers days that feel full, not just filled.</p>
-    </div>
-
-    <div class="problem-right">
-      <div class="benefit">
-        <h3>Fuller days for members</h3>
-        <p>Built around music, art, movement, and countless shared experiences, matched to who each person is today.</p>
+  <section class="problem">
+    <div class="problem-grid">
+      <div class="problem-left">
+        <h2>What if memory loss <span class="cornflower">didn't mean a smaller life?</span></h2>
+        <p>Too often, the world narrows. Daybridge opens it back up, with a research-based approach that delivers days that feel full, not just filled.</p>
       </div>
-      <div class="benefit coral">
-        <h3>An answer for families</h3>
-        <p>Where your loved one continues to find joy and purpose. When they're thriving, the whole family can, too.</p>
+      <div class="problem-right">
+        <div class="benefit">
+          <h3>Fuller days for members</h3>
+          <p>Built around music, art, movement, and countless shared experiences, matched to who each person is today.</p>
+        </div>
+        <div class="benefit coral">
+          <h3>An answer for families</h3>
+          <p>Where your loved one continues to find joy and purpose. When they're thriving, the whole family can, too.</p>
+        </div>
       </div>
     </div>
-
-  </div>
-</section>
+  </section>
 
   <!-- HOW WE CARE -->
   <section class="how" id="how">
@@ -109,9 +110,9 @@
   </section>
 
   <!-- STATEMENT -->
-<section class="statement">
-  <p class="statement-text"><em>Daybridge is where members thrive<span class="desktop-break"><br></span>and the days feel full.</em></p>
-</section>
+  <section class="statement">
+    <p class="statement-text"><em>Daybridge is where members thrive<span class="desktop-break"><br></span>and the days feel full.</em></p>
+  </section>
 
   <!-- PRICING -->
   <section class="pricing" id="membership">
@@ -179,7 +180,9 @@
             </tr>
             <tr>
               <td>Home health aide</td>
-              <td>$37</td><td>6</td><td>$233</td>
+              <td>$37</td>
+              <td>6</td>
+              <td>$233</td>
             </tr>
           </tbody>
         </table>
@@ -249,6 +252,7 @@
     <p class="wl-spam-note">No spam. Just meaningful updates.</p>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <a href="index.html" class="footer-logo"><span class="logo-day-footer">Day</span><span class="logo-bridge-footer">bridge</span></a>
     <div class="footer-links">
@@ -272,9 +276,12 @@
     document.querySelectorAll('.wl-pill').forEach(pill => {
       pill.addEventListener('click', function () {
         const group = this.closest('.wl-pills');
-        group.querySelectorAll('.wl-pill').forEach(p => { p.classList.remove('active'); p.setAttribute('aria-pressed','false'); });
+        group.querySelectorAll('.wl-pill').forEach(p => {
+          p.classList.remove('active');
+          p.setAttribute('aria-pressed', 'false');
+        });
         this.classList.add('active');
-        this.setAttribute('aria-pressed','true');
+        this.setAttribute('aria-pressed', 'true');
         const hidden = group.nextElementSibling;
         if (hidden && hidden.classList.contains('wl-pill-value')) hidden.value = this.textContent.trim();
         group.classList.remove('error');

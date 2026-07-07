@@ -105,7 +105,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .logo-day    { color: var(--color-cornflower); }
-.logo-bridge { color: var(--color-navy); }
+.logo-bridge { color: var(--color-cornflower); }
 
 .nav-links {
   display: flex;
