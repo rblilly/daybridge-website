@@ -164,7 +164,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .nav-btns {
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
   gap: 0.35rem;
   margin-left: auto;
