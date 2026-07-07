@@ -745,12 +745,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-bottom: 0.9rem;
 }
 
-.pricing-table tr.db-row td.highlight { color: var(--color-coral); }
+.pricing-table tr.db-row td.highlight { color: var(--color-coral-dark); }
 .pricing-table tr:not(.db-row) td { padding-top: 1.35rem; padding-bottom: 1.35rem; }
 
 .db-badge {
   display: inline-block;
-  background: var(--color-coral);
+  background: var(--color-coral-dark);
   color: var(--color-white);
   font-family: var(--font-body);
   font-size: 6px;
