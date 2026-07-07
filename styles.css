@@ -410,9 +410,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-top: 1.25rem;
 }
 
-.card.coral-card    { border-top-color: var(--color-honey); }
-.card.lavender-card { border-top-color: var(--color-honey); }
-.card.navy-card     { border-top-color: var(--color-honey); }
+.card { border-top-color: var(--color-honey); }
 
 .card-title {
   font-family: var(--font-display);
@@ -421,9 +419,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 0.6rem;
 }
 
-.card.coral-card    .card-title { color: var(--color-cornflower); }
-.card.lavender-card .card-title { color: var(--color-cornflower); }
-.card.navy-card     .card-title { color: var(--color-cornflower); }
+.card-title { color: var(--color-cornflower); }
 
 .card-body {
   font-family: var(--font-nav);
@@ -452,9 +448,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .card-lead     { font-weight: 500; }
-.coral-lead    { color: var(--color-navy); font-weight: 700; }
-.lavender-lead { color: var(--color-navy); font-weight: 700; }
-.navy-lead     { color: var(--color-navy); font-weight: 700; }
+.card-lead { color: var(--color-coral); font-weight: 400; }
 
 .coral    { color: var(--color-coral-dark); }
 .lavender { color: var(--color-cornflower); }
