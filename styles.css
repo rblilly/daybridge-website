@@ -1301,7 +1301,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .pe-days    { padding: 5px 0; color: var(--color-navy); font-size: 17px; white-space: nowrap; width: 3.5rem; }
 .pe-unit    { padding: 5px 0; color: var(--color-text-muted); font-size: 14px; white-space: nowrap; width: 4rem; }
 .pe-dash    { padding: 5px 0.3rem 5px 0.5rem; color: var(--color-text-muted); font-size: 14px; text-align: center; white-space: nowrap; width: 2rem; }
-.pe-amount  { padding: 5px 0; color: var(--color-coral-dark); font-weight: 500; font-size: 17px; white-space: nowrap; text-align: right; width: 4.2rem; }
+.pe-amount  { padding: 5px 0; color: var(--color-coral); font-weight: 500; font-size: 17px; white-space: nowrap; text-align: right; width: 4.2rem; }
 .pe-freq    { padding: 5px 0 5px 0.5rem; color: var(--color-text-muted); font-size: 14px; white-space: nowrap; }
 
 .pricing-right-spacer   { height: 2.8rem; }
