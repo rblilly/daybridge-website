@@ -102,8 +102,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-decoration: none;
 }
 
-.logo-day { color: var(--color-honey); }
-.logo-bridge { color: var(--color-navy); }
+.logo-day { color: var(--color-cornflower); }
+.logo-bridge { color: var(--color-cornflower); }
 
 .nav-logo em {
   font-style: normal;
