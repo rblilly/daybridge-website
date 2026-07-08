@@ -261,6 +261,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-right {
   position: relative;
   overflow: hidden;
+  padding: 3rem 4rem 3rem 1.5rem;
 }
 
 .hero-right img {
@@ -268,17 +269,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
+  border-radius: 24px;
+  display: block;
 }
 
 .hero-right-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to left,
-    transparent 82%,
-    rgba(250,247,242,0.15) 90%,
-    rgba(250,247,242,0.5) 96%,
-    #FAF7F2 100%
-  );
+  display: none;
 }
 
 
@@ -1447,6 +1443,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-left   { padding: 3rem 1.5rem; }
   .hero-h1     { font-size: 38px; }
   .hero-right  { height: 280px; }
+  .hero-right { padding: 1.5rem; }
 
   .how         { padding: 3rem 1.5rem; }
   .how-title   { font-size: 34px; }
