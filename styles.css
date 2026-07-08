@@ -1468,6 +1468,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .team            { padding: 3rem 1.5rem; }
   .team-title      { font-size: 34px; }
   .sign-off-people { flex-direction: column; gap: 1.5rem; }
+  .advisors-partner { align-items: center; }
+  .advisors-partner-desc { text-align: center; }
 
   .footer          { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.25rem 1.5rem; text-align: center; }
   .footer-links    { justify-self: center; }
