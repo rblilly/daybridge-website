@@ -101,7 +101,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: 'Fraunces', serif;
   font-size: clamp(26px, 2.4vw, 30px);
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 
