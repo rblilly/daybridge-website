@@ -1130,6 +1130,65 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
 }
 
+.advisors-divider {
+  border: none;
+  border-top: 1px solid var(--color-border-med);
+  margin: 3rem 0 2.5rem;
+}
+ 
+.advisors-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+ 
+.advisors-names,
+.advisors-bios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+ 
+.advisors-names {
+  margin-bottom: 1.25rem;
+}
+ 
+.advisor-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-navy);
+  margin: 0;
+  flex: 1 1 220px;
+}
+ 
+.advisor-bio {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-nav);
+  font-size: 14px;
+  color: var(--color-text-body);
+  line-height: 1.55;
+  flex: 1 1 220px;
+}
+ 
+.advisor-bio li {
+  padding-left: 0.9rem;
+  position: relative;
+  margin-bottom: 0.35rem;
+}
+ 
+.advisor-bio li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-cornflower);
+}
 
 /* ============================================================
    14. FAQ PAGE
