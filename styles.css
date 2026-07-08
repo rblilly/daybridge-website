@@ -1464,6 +1464,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .pricing-title { font-size: 34px; }
   .pricing-inner { grid-template-columns: 1fr; gap: 2rem; }
   .pricing-right { padding-left: 0; padding-top: 1.5rem; }
+  .pricing-tagline-wrap { margin-top: 1.5rem; }
 
   .waitlist    { padding: 3rem 1.5rem; }
   .wl-card     { padding: 2rem 1.25rem; }
