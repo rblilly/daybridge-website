@@ -1428,16 +1428,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 @media (max-width: 768px) {
-  .nav        { padding: 1rem 1.5rem; position: relative; }
+  .nav        { padding: 1rem 1.5rem; position: sticky; top: 0; }
   .nav-toggle { display: block; }
   .nav-links  { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #EDE8E0; padding: 1.5rem 1.5rem 2rem; gap: 1.25rem; z-index: 200; border-top: 1px solid var(--color-border); }
   .nav-links.open { display: flex; }
-  .nav-link       { color: var(--color-navy); }
+  .nav-link       { color: var(--color-navy); font-size: 16px; }
   .nav-link:hover { color: var(--color-cornflower); }
 
   .nav-btns {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     width: 100%;
     gap: 0.5rem;
   }
@@ -1464,7 +1464,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .pricing-title { font-size: 34px; }
   .pricing-inner { grid-template-columns: 1fr; gap: 2rem; }
   .pricing-right { padding-left: 0; padding-top: 1.5rem; }
-  .pricing-tagline-wrap { margin-top: 1.5rem; }
+  .pricing-tagline-wrap { margin-top: 1.5rem; } 
 
   .waitlist    { padding: 3rem 1.5rem; }
   .wl-card     { padding: 2rem 1.25rem; }
