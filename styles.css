@@ -101,12 +101,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: 'Fraunces', serif;
   font-size: clamp(26px, 2.4vw, 30px);
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.005em;
   text-decoration: none;
 }
 
-.logo-day    { color: var(--color-coral); }
-.logo-bridge { color: var(--color-cornflower); }
+.logo-day    { color: var(--color-cornflower); }
+.logo-bridge { color: var(--color-coral); }
 
 .nav-logo em {
   font-style: normal;
