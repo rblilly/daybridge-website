@@ -274,10 +274,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background: linear-gradient(to left,
-    transparent 55%,
-    rgba(250,247,242,0.1) 65%,
-    rgba(250,247,242,0.35) 75%,
-    rgba(250,247,242,0.7) 88%,
+    transparent 82%,
+    rgba(250,247,242,0.15) 90%,
+    rgba(250,247,242,0.5) 96%,
     #FAF7F2 100%
   );
 }
