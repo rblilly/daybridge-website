@@ -1141,48 +1141,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 1.25rem;
 }
  
-.advisors-names,
-.advisors-bios {
+.advisors-partner {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
 }
- 
-.advisors-names {
-  margin-bottom: 1.25rem;
-}
- 
-.advisor-name {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--color-navy);
-  margin: 0;
-  flex: 1 1 220px;
-}
- 
-.advisor-bio {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-family: var(--font-nav);
-  font-size: 14px;
-  color: var(--color-text-body);
-  line-height: 1.55;
-  flex: 1 1 220px;
-}
- 
-.advisor-bio li {
-  padding-left: 0.9rem;
-  position: relative;
-  margin-bottom: 0.35rem;
-}
- 
-.advisor-bio li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--color-cornflower);
+
+.advisors-partner-logo {
+  height: 56px;
+  width: auto;
+  margin-top: 16px;
+  opacity: 0.85;
 }
 
 /* ============================================================
