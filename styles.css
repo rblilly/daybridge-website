@@ -1144,15 +1144,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .advisors-partner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 3rem;
-}
-
-.advisors-partner-logo {
-  height: 56px;
-  width: auto;
-  margin-top: 16px;
-  opacity: 0.85;
 }
 
 .advisors-partner-desc {
@@ -1160,9 +1153,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 13px;
   line-height: 1.65;
   color: var(--color-text-muted);
-  text-align: center;
+  text-align: left;
   max-width: 380px;
   margin-top: 0.75rem;
+}
+
+.advisors-partner-logo {
+  height: 56px;
+  width: auto;
+  margin-top: 16px;
+  opacity: 0.85;
 }
 
 /* ============================================================
