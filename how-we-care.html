@@ -8,6 +8,63 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    sup.cite {
+      font-size: 0.65em;
+      color: #5A78C8;
+      font-weight: 500;
+      vertical-align: super;
+      line-height: 0;
+    }
+    .research-toggle {
+      background: none;
+      border: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      margin: 1.25rem 0 0;
+      font-family: inherit;
+      font-size: 0.8125rem;
+      color: #C2614A;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .research-toggle:hover { color: #9e4a35; }
+    .toggle-arrow {
+      font-size: 0.625rem;
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+    .research-toggle[aria-expanded="true"] .toggle-arrow {
+      transform: rotate(180deg);
+    }
+    .schedule-footnotes {
+      display: none;
+      margin-top: 1rem;
+      border-top: 1px solid currentColor;
+      padding-top: 1rem;
+      opacity: 0.6;
+    }
+    .schedule-footnotes.open { display: block; }
+    .schedule-footnotes ol {
+      margin: 0;
+      padding-left: 1.25rem;
+      list-style: decimal;
+    }
+    .schedule-footnotes li {
+      font-size: 0.75rem;
+      line-height: 1.6;
+      margin-bottom: 0.35rem;
+    }
+    .schedule-footnotes a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  </style>
 </head>
 <body>
 
@@ -76,7 +133,7 @@
         <span class="schedule-time" role="cell">08:00 AM – 10:00 AM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Arrival &amp; Check-In</div>
-          <div class="schedule-item-desc">Members arrive in small groups to ease the morning transition. Daily health screenings are completed upon arrival, while members settle in and enjoy coffee or tea together.</div>
+          <div class="schedule-item-desc">Members arrive in small groups — a structure shown to reduce overstimulation and support a calm start. Health check-ins happen as part of the morning rhythm, while everyone settles in over coffee or tea.<sup class="cite">¹</sup></div>
         </div>
       </div>
 
@@ -84,7 +141,7 @@
         <span class="schedule-time" role="cell">10:00 AM – 11:00 AM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Enrichment Activities</div>
-          <div class="schedule-item-desc">Cognitive activities like memory games and trivia are scheduled early in the day, when minds are freshest. Members choose among options that match their interests, adapted to meet each member's needs.</div>
+          <div class="schedule-item-desc">Structured cognitive engagement — word puzzles, discussion groups, trivia, and skill-based activities — is offered in the morning, when research shows attention and processing tend to be at their sharpest. Each person chooses what reflects their own interests and strengths.<sup class="cite">²</sup></div>
         </div>
       </div>
 
@@ -92,7 +149,7 @@
         <span class="schedule-time" role="cell">11:00 AM – 12:00 PM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Movement</div>
-          <div class="schedule-item-desc">We prioritize movement that incorporates dual-task activities — exercises that engage mind and body. Activities include tai chi, ballroom dancing, walking conversations, and chair exercises, all adapted to each member's abilities.</div>
+          <div class="schedule-item-desc">Research consistently shows that combining physical movement with cognitive engagement — dual-task activity — supports brain health and reduces fall risk. Sessions include tai chi, ballroom dancing, walking conversations, and seated movement, with each person participating in the way that works best for them.<sup class="cite">³</sup></div>
         </div>
       </div>
 
@@ -100,7 +157,7 @@
         <span class="schedule-time" role="cell">12:00 PM – 01:00 PM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Lunch</div>
-          <div class="schedule-item-desc">Lunch is served communally, with space for small groups to break off. Shared meals naturally encourage conversation, connection, and better eating. Every meal is freshly prepared, hot, and nutritious.</div>
+          <div class="schedule-item-desc">Lunch is served communally, with room for smaller conversations to form naturally. Research shows that shared meals improve both nutritional intake and social wellbeing for people living with dementia. Every meal is freshly prepared, hot, and seasonally inspired.<sup class="cite">⁴</sup></div>
         </div>
       </div>
 
@@ -108,7 +165,7 @@
         <span class="schedule-time" role="cell">01:00 PM – 02:00 PM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Arts &amp; Enrichment</div>
-          <div class="schedule-item-desc">The afternoon is dedicated to the activities members love most — music, art, storytelling, building, and scrapbooking. These aren't just enjoyable; they're proven to improve mood and deepen social connection.</div>
+          <div class="schedule-item-desc">Afternoons center on creative and expressive activities — music, visual art, storytelling, woodworking, and reminiscence work. A robust body of research supports creative engagement as a way to sustain mood, identity, and social connection.<sup class="cite">⁵</sup></div>
         </div>
       </div>
 
@@ -116,7 +173,7 @@
         <span class="schedule-time" role="cell">02:00 PM – 03:30 PM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Afternoon Programming</div>
-          <div class="schedule-item-desc">Gardening, cooking demonstrations, opportunities to volunteer, or intergenerational visits. Meaningful roles and real-world activities are central to person-centered dementia care and support a sense of purpose and belonging.</div>
+          <div class="schedule-item-desc">Each afternoon brings purposeful engagement — gardening, cooking, volunteering, or intergenerational visits. Meaningful roles and real-world activities support a sense of purpose and belonging that is central to person-centered dementia care.<sup class="cite">⁶</sup></div>
         </div>
       </div>
 
@@ -124,11 +181,40 @@
         <span class="schedule-time" role="cell">03:30 PM – 05:00 PM</span>
         <div class="schedule-item-content" role="cell">
           <div class="schedule-item-title">Wind-Down &amp; Departure</div>
-          <div class="schedule-item-desc">Each day closes with music, storytelling, or relaxed conversation — a consistent routine that eases the transition home. Extended hours until 06:00 PM available for families who need them.</div>
+          <div class="schedule-item-desc">Each day closes with music, storytelling, or relaxed conversation — a consistent routine that research links to reduced late-day agitation. Departure follows a predictable, unhurried structure that eases the transition home. Extended hours until 06:00 PM available for families who need them.<sup class="cite">⁷</sup></div>
         </div>
       </div>
 
     </div>
+
+    <div class="schedule-footnotes">
+      <ol>
+        <li>Giebel et al. (2020). Adult day services and dementia caregivers' daily affect: the role of distress response to behavioral and psychological symptoms. <em>BMC Geriatrics</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7190408/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+        <li>Zhang et al. (2025). Associations of circadian rhythms with cognitive performance in patients with amnestic mild cognitive impairment. <em>Journal of Clinical Medicine</em>. <a href="https://doi.org/10.3390/jcm15083023" target="_blank">doi.org/10.3390/jcm15083023</a></li>
+        <li>Zhao et al. (2025). Comparative effectiveness of different dual-task mode interventions on cognitive function in older adults with MCI or dementia: a systematic review and network meta-analysis (32 RCTs, n = 2,370). <em>Aging Clinical and Experimental Research</em>, Springer. <a href="https://link.springer.com/article/10.1007/s40520-025-03016-5" target="_blank">link.springer.com</a></li>
+        <li>Vucea et al. (2021). Effect of communal dining and dining room enhancement interventions on nutritional, clinical, and functional outcomes: a systematic review. <em>Journal of Human Nutrition and Dietetics</em>, Wiley. <a href="https://onlinelibrary.wiley.com/doi/10.1111/1747-0080.12650" target="_blank">onlinelibrary.wiley.com</a></li>
+        <li>Cheong et al. (2019). A "Music, Mind and Movement" program for people with dementia: initial evidence of improved cognition. <em>Frontiers in Aging Neuroscience</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6646671/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+        <li>Smyth et al. (2021). Living well with dementia: the role of volunteer-based social recreational programs in promoting social connectedness. <em>Aging &amp; Mental Health</em>, Taylor &amp; Francis. <a href="https://www.tandfonline.com/doi/full/10.1080/13607863.2021.1950614" target="_blank">tandfonline.com</a></li>
+        <li>Mayo Clinic (2024). Late-day confusion in people with dementia (sundowning). <a href="https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/expert-answers/sundowning/faq-20058511" target="_blank">mayoclinic.org</a></li>
+      </ol>
+    </div>
+
+    <button class="research-toggle" aria-expanded="false" aria-controls="schedule-footnotes-list" id="research-btn">
+      View some of the research behind our approach <span class="toggle-arrow">▼</span>
+    </button>
+
+    <div class="schedule-footnotes" id="schedule-footnotes-list" role="region" aria-labelledby="research-btn">
+      <ol>
+        <li>Giebel et al. (2020). Adult day services and dementia caregivers' daily affect: the role of distress response to behavioral and psychological symptoms. <em>BMC Geriatrics</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7190408/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+        <li>Zhang et al. (2025). Associations of circadian rhythms with cognitive performance in patients with amnestic mild cognitive impairment. <em>Journal of Clinical Medicine</em>. <a href="https://doi.org/10.3390/jcm15083023" target="_blank">doi.org/10.3390/jcm15083023</a></li>
+        <li>Zhao et al. (2025). Comparative effectiveness of different dual-task mode interventions on cognitive function in older adults with MCI or dementia: a systematic review and network meta-analysis (32 RCTs, n = 2,370). <em>Aging Clinical and Experimental Research</em>, Springer. <a href="https://link.springer.com/article/10.1007/s40520-025-03016-5" target="_blank">link.springer.com</a></li>
+        <li>Vucea et al. (2021). Effect of communal dining and dining room enhancement interventions on nutritional, clinical, and functional outcomes: a systematic review. <em>Journal of Human Nutrition and Dietetics</em>, Wiley. <a href="https://onlinelibrary.wiley.com/doi/10.1111/1747-0080.12650" target="_blank">onlinelibrary.wiley.com</a></li>
+        <li>Cheong et al. (2019). A "Music, Mind and Movement" program for people with dementia: initial evidence of improved cognition. <em>Frontiers in Aging Neuroscience</em>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6646671/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
+        <li>Smyth et al. (2021). Living well with dementia: the role of volunteer-based social recreational programs in promoting social connectedness. <em>Aging &amp; Mental Health</em>, Taylor &amp; Francis. <a href="https://www.tandfonline.com/doi/full/10.1080/13607863.2021.1950614" target="_blank">tandfonline.com</a></li>
+        <li>Mayo Clinic (2024). Late-day confusion in people with dementia (sundowning). <a href="https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/expert-answers/sundowning/faq-20058511" target="_blank">mayoclinic.org</a></li>
+      </ol>
+    </div>
+
     <p class="schedule-note">Sample schedule, subject to change</p>
   </section>
 
@@ -141,6 +227,17 @@
     </div>
     <div class="footer-copy">© 2026 Daybridge · hello@thedaybridge.com · <a href="tel:3125471718">(312) 547-1718</a></div>
   </footer>
+
+  <script>
+    const researchBtn = document.getElementById('research-btn');
+    if (researchBtn) {
+      researchBtn.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        document.getElementById('schedule-footnotes-list').classList.toggle('open');
+      });
+    }
+  </script>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');

@@ -466,6 +466,40 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .schedule-cta:hover { background: var(--color-coral-dark); }
 
+/* Schedule citations */
+sup.cite {
+  font-size: 0.65em;
+  color: #5A78C8;
+  font-weight: 500;
+  vertical-align: super;
+  line-height: 0;
+}
+
+.schedule-footnotes {
+  margin-top: 1.5rem;
+  border-top: 1px solid currentColor;
+  padding-top: 1rem;
+  opacity: 0.6;
+}
+
+.schedule-footnotes ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: decimal;
+}
+
+.schedule-footnotes li {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.schedule-footnotes a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 
 /* ============================================================
    9. CAREGIVERS PAGE
