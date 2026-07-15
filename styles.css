@@ -90,7 +90,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-bottom: 1.35rem;
   padding-left: 4rem;
   padding-right: 4rem;
-  background: var(--color-linen);
+  background: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
