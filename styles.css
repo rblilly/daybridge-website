@@ -113,6 +113,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--color-cornflower);
 }
 
+.nav-logo img {
+  height: 48px;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
