@@ -450,6 +450,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .lavender { color: var(--color-cornflower); }
 .navy     { color: var(--color-navy); }
 
+.link-coral { white-space: nowrap; }
+
 .schedule-cta {
   display: inline-block;
   background: var(--color-coral);
@@ -1381,6 +1383,7 @@ sup.cite {
   justify-self: end;
 }
 
+.footer-copy a { white-space: nowrap; }
 
 /* ============================================================
    17. UTILITY CLASSES
@@ -1392,8 +1395,8 @@ sup.cite {
 .honey           { color: var(--color-honey); }
 .desktop-break   { display: inline; }
 
-.schedule-cta-block { height: 4.5rem; }
-.schedule-cta-wrap  { text-align: center; padding-bottom: 1rem; }
+.schedule-cta-block { height: 1.5rem; }
+.schedule-cta-wrap  { text-align: center; padding-bottom: 3rem; }
 .schedule-cta-title { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--color-navy); margin-bottom: 2.5rem; line-height: 1.2; }
 
 .pe-table   { border-collapse: collapse; font-family: var(--font-nav); border-spacing: 0; }
