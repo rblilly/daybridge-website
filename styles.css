@@ -488,12 +488,12 @@ sup.cite {
   margin: 1.25rem 0 0;
   font-family: inherit;
   font-size: 0.8125rem;
-  color: var(--color-coral);
+  color: var(--color-coral-dark);
   font-weight: 500;
   text-decoration: none;
 }
  
-.research-toggle:hover { color: var(--color-coral-dark); }
+.research-toggle:hover { color: var(--color-navy); }
  
 .toggle-arrow {
   display: inline-block;
@@ -711,7 +711,7 @@ sup.cite {
   font-family: var(--font-display);
   font-size: 36px;
   font-weight: 500;
-  color: var(--color-coral);
+  color: var(--color-coral-dark);
   line-height: 1.2;
   white-space: nowrap;
 }
