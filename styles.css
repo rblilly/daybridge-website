@@ -249,7 +249,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(27,43,75,0.45);
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .hero-h1 {
