@@ -225,21 +225,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   min-height: 520px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, #FDFCF9 0%, rgba(253,252,249,0.95) 28%, rgba(253,252,249,0.65) 52%, transparent 75%);
+  background: linear-gradient(to right, #FDFCF9 0%, rgba(253,252,249,0.95) 28%, rgba(253,252,249,0.65) 52%, transparent 75%);
 }
 
 .hero-left {
   position: relative;
   z-index: 1;
   max-width: 380px;
-  padding: 0 3rem 0 0;
+  padding: 0 0 0 3rem;
 }
 
 .hero-eyebrow {
@@ -255,7 +255,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .hero-h1 {
   font-family: var(--font-display);
-  font-size: clamp(28px, 3.2vw, 36px);
+  font-size: clamp(36px, 5vw, 50px);
   font-weight: 500;
   line-height: 1.05;
 }
