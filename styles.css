@@ -238,7 +238,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-left {
   position: relative;
   z-index: 1;
-  max-width: 520px;
+  max-width: 600px;
   padding: 6rem 4rem;
 }
 
