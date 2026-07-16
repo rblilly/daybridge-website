@@ -590,7 +590,7 @@ sup.cite {
   border-bottom: 1px solid var(--color-border-light);
 }
 
-.cg-new-text .cg-feature:first-of-type { margin-top: 3rem;}
+.cg-new-text .cg-feature:first-of-type { margin-top: 5rem;}
 .cg-new-text .cg-feature:last-of-type { border-bottom: none; }
 
 .cg-new-text .cg-feature-icon {
