@@ -238,8 +238,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-left {
   position: relative;
   z-index: 1;
-  max-width: 380px;
-  padding: 0 0 0 3rem;
+  max-width: 400px;
+  padding: 6rem 4rem;
 }
 
 .hero-eyebrow {
