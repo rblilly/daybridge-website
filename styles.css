@@ -269,7 +269,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.7;
   color: var(--color-text-body);
   text-wrap: balance;
-  margin-bottom: 2;
+  margin-bottom: 2rem;
 }
 
 .hero-btn-left {
@@ -1390,7 +1390,6 @@ sup.cite {
    ============================================================ */
 .link-coral      { color: var(--color-coral-dark); }
 .hero-sub-spaced { margin-top: 0.25rem; }
-.hero-btn-left   { margin-top: 0.5rem; align-self: flex-start; }
 .cornflower      { color: var(--color-cornflower); }
 .honey           { color: var(--color-honey); }
 .desktop-break   { display: inline; }
