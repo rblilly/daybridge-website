@@ -39,6 +39,11 @@
           <div class="faq-body"><div class="faq-a"><p>Daybridge is designed to support members across every stage of memory loss and dementia. Our programming is engaging, purposeful, and fun. It adapts as needs evolve, so members are always doing something meaningful.</p><p>We do have guidelines around mobility and behavioral needs to ensure a safe, high-quality environment for every member. We'd be happy to meet and determine whether Daybridge is the right fit for your family.</p></div></div>
         </div>
 
+        <div class="faq-item" id="faq-staff">
+          <div class="faq-q">What training does your staff have? <span class="faq-icon">+</span></div>
+          <div class="faq-body"><div class="faq-a"><p>Every member of our care team is trained to understand the unique needs of people living with memory loss — not just clinically, but as whole people.</p><p>Our team holds:</p><ul><li>CARES® Dementia Training for person-centered care</li><li>Alzheimer's Association essentiALZ® Certification</li><li>Ongoing education in dementia care, communication, safety, and behavior support</li><li>CPR and First Aid certification</li><li>Medication administration training (where applicable)</li></ul><p>All employees complete comprehensive background checks and pre-employment screening before joining the Daybridge team.</p></div></div>
+        </div>
+
         <div class="faq-item">
           <div class="faq-q">How do I know whether it's time for Daybridge? <span class="faq-icon">+</span></div>
           <div class="faq-body"><div class="faq-a"><p>You may think of Daybridge as something for later — when independence declines and care at home becomes overwhelming. But the earlier someone joins Daybridge, the more we can help them slow decline, age with dignity, bring back joy and connection to their lives, and continue doing the things they love.</p><p>Signs it may be time:</p><ul><li>Life at home has become lonelier and harder to fill</li><li>Everyday tasks that once felt routine no longer come easily</li><li>Access to OT, PT, and counseling matters, but getting to multiple appointments is a barrier</li></ul></div></div>
@@ -130,15 +135,15 @@
         if (!isOpen) item.classList.add('open');
       });
     });
-  // Auto-open FAQ item from URL hash
-const hash = window.location.hash;
-if (hash) {
-  const target = document.querySelector(hash);
-  if (target && target.classList.contains('faq-item')) {
-    target.classList.add('open');
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-}
+
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target && target.classList.contains('faq-item')) {
+        target.classList.add('open');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
   </script>
 
 </body>
