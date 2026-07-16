@@ -238,7 +238,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero-left {
   position: relative;
   z-index: 1;
-  max-width: 400px;
+  max-width: 520px;
   padding: 6rem 4rem;
 }
 
@@ -250,7 +250,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-transform: uppercase;
   color: rgba(27,43,75,0.45);
   white-space: nowrap;
-  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-h1 {
