@@ -249,7 +249,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(27,43,75,0.45);
-  white-space: nowrap;
   margin-bottom: 0.5rem;
 }
 
@@ -270,10 +269,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.7;
   color: var(--color-text-body);
   text-wrap: balance;
+  margin-bottom: 0;
 }
 
-
-
+.hero-btn-left {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
 
 /* ============================================================
    7. PROBLEM SECTION (index.html)
@@ -953,13 +955,13 @@ sup.cite {
   background: var(--color-coral);
   color: var(--color-white);
   border: none;
-  padding: 13px 0;
+  padding: 13px 40px;
   border-radius: 100px;
   font-size: 13px;
   font-weight: 500;
   cursor: pointer;
   font-family: var(--font-body);
-  width: 460px;
+  width: auto;
   max-width: 100%;
   transition: background 0.15s;
 }
