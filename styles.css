@@ -13,11 +13,11 @@
    ============================================================ */
 :root {
   /* Core brand palette */
-  --color-coral:        #E07A5F;   /* primary CTA, buttons */
-  --color-coral-dark:   #C4593F;   /* coral hover state */
+  --color-coral:        #F28F7A;;   /* primary CTA, buttons */
+  --color-coral-dark:   #F28F7A;   /* coral hover state */
   --color-navy:         #1B2B4B;   /* all navy uses */
-  --color-cornflower:   #4A6A9E;   /* logo, headline accent, secondary CTA */
-  --color-honey:        #E8B84B;   /* accent, waitlist headline */
+  --color-cornflower:   #6FB5FD;   /* logo, headline accent, secondary CTA */
+  --color-honey:        #FED959;   /* accent, waitlist headline */
 
   /* Neutral surfaces */
   --color-linen:        #FAF7F2;   /* main page background */
@@ -286,7 +286,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    7. PROBLEM SECTION (index.html)
    ============================================================ */
 .problem {
-  background: #F2EDE4;
+  background: #FAF7F2;
   padding: 3.5rem 4rem;
 }
 
