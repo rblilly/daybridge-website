@@ -357,7 +357,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
    ============================================================ */
 .how {
   background: var(--color-linen);
-  padding: 6rem 4rem;
+  padding: 4rem 4rem;
   scroll-margin-top: 60px;
 }
 
@@ -1395,7 +1395,7 @@ sup.cite {
 .desktop-break   { display: inline; }
 
 .schedule-cta-block { height: 1.5rem; }
-.schedule-cta-wrap  { text-align: center; padding-bottom: 3rem; }
+.schedule-cta-wrap  { text-align: center; padding-bottom: 5rem; }
 .schedule-cta-title { font-family: var(--font-display); font-size: 28px; font-weight: 500; color: var(--color-navy); margin-bottom: 2.5rem; line-height: 1.2; }
 
 .pe-table   { border-collapse: collapse; font-family: var(--font-nav); border-spacing: 0; }
