@@ -269,7 +269,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.7;
   color: var(--color-text-body);
   text-wrap: balance;
-  margin-bottom: 1.5;
+  margin-bottom: 2;
 }
 
 .hero-btn-left {
