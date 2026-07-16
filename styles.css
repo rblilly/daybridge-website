@@ -67,6 +67,7 @@ body {
   color: var(--color-navy);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-wrap: pretty;
 }
 
 img, svg {
