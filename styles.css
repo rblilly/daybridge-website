@@ -440,9 +440,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .card-details li {
   list-style: disc;
-}
-
-.card-details p {
   font-family: var(--font-nav);
   font-size: 1rem;
   line-height: 1.55;
