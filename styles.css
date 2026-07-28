@@ -837,6 +837,11 @@ sup.cite {
 
 .page-membership .pricing { padding-bottom: 2rem; }
 
+.pricing-tagline-wrap .btn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
 
 /* ============================================================
    11. WAITLIST FORM
