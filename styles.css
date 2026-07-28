@@ -487,6 +487,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-left: 1.1rem;
 }
 
+.how-teaser-quote {
+  border-left: 3px solid var(--color-honey);
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.how-teaser-quote p {
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--color-text-body);
+}
+
 /* Schedule citations */
 sup.cite {
   font-size: 0.65em;
