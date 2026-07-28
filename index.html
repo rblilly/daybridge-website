@@ -197,53 +197,8 @@
     <p class="wl-eyebrow">Coming to Ravenswood, Chicago<br><span class="wl-eyebrow-line2">Spring 2027</span></p>
     <h2 class="wl-h2"><span class="honey">Start</span> the conversation.</h2>
     <p class="wl-intro">Within 48 hours, we'll reach out personally to answer your questions and walk you through how Daybridge works. No pressure, just clear answers.</p>
-    <form class="wl-card" name="waitlist" method="POST" data-netlify="true" action="/thank-you.html">
-      <input type="hidden" name="form-name" value="waitlist" />
-      <div class="wl-row">
-        <div class="wl-col-fixed">
-          <label class="wl-label" for="input-name">Full name</label>
-          <input type="text" id="input-name" name="name" placeholder="Jane Smith" class="wl-input" required />
-        </div>
-        <div class="wl-col-fixed wl-col-wide">
-          <label class="wl-label" for="input-email">Email address</label>
-          <input type="email" id="input-email" name="email" placeholder="jane@email.com" class="wl-input" required />
-        </div>
-        <div class="wl-col-fixed">
-          <label class="wl-label" for="input-phone">Phone number</label>
-          <input type="tel" id="input-phone" name="phone" placeholder="(312) 555-0100" class="wl-input" />
-        </div>
-      </div>
-      <div class="wl-row">
-        <div class="wl-col-fixed">
-          <label class="wl-label" id="label-service-for">Service is for</label>
-          <div class="wl-pills" role="group" aria-labelledby="label-service-for">
-            <button class="wl-pill wl-pill-equal" type="button" aria-pressed="false">Myself</button>
-            <button class="wl-pill wl-pill-equal" type="button" aria-pressed="false">A loved one</button>
-          </div>
-          <input type="hidden" name="service-for" class="wl-pill-value" />
-          <span class="wl-pill-error" role="alert">Please select an option</span>
-        </div>
-        <div class="wl-col-fixed">
-          <label class="wl-label" for="input-zip">Zip code</label>
-          <input type="text" id="input-zip" name="zip" placeholder="60640" maxlength="5" class="wl-input wl-input-zip" />
-        </div>
-        <div class="wl-col-fixed">
-          <label class="wl-label" id="label-days">Days per week</label>
-          <div class="wl-pills" role="group" aria-labelledby="label-days">
-            <button class="wl-pill" type="button" aria-pressed="false">2</button>
-            <button class="wl-pill" type="button" aria-pressed="false">3</button>
-            <button class="wl-pill" type="button" aria-pressed="false">4</button>
-            <button class="wl-pill" type="button" aria-pressed="false">5</button>
-          </div>
-          <input type="hidden" name="days-per-week" class="wl-pill-value" />
-          <span class="wl-pill-error" role="alert">Please select an option</span>
-        </div>
-      </div>
-      <div class="wl-form-spacer"></div>
-      <div class="wl-submit-wrap">
-        <button class="wl-submit" type="submit">Join the Waitlist</button>
-      </div>
-    </form>
+    <a href="waitlist.html" class="btn btn-primary" style="display:inline-block; margin-top: 0.5rem;">Join the Waitlist →</a>
+    <p class="wl-spam-note" style="margin-top: 1.25rem;">Are you a referring provider? <a href="referral.html" style="color: var(--color-cornflower);">Get in touch here →</a></p>
   </section>
 
   <footer class="footer">
