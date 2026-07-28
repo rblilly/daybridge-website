@@ -406,7 +406,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding-top: 1.25rem;
 }
 
-.card { border-top-color: var(--color-honey); }
+.card { border-top-color: var(--color-navy); }
 
 .card-title {
   font-family: var(--font-display);
@@ -419,7 +419,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .card-body {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.55;
   color: var(--color-text-body);
   text-align: left;
@@ -444,7 +444,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .card-details p {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.55;
   color: var(--color-text-body);
 }
@@ -611,7 +611,7 @@ sup.cite {
 
 .cg-new-text .cg-feature-title {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-text-light);
   margin-bottom: 0.2rem;
@@ -619,7 +619,7 @@ sup.cite {
 
 .cg-new-text .cg-feature-desc {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-light-75);
   line-height: 1.55;
 }
@@ -723,14 +723,14 @@ sup.cite {
 
 .pricing-amount-line .unit {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-muted);
   font-weight: 400;
 }
 
 .pricing-sub {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-body);
   line-height: 1.55;
   margin-bottom: 1.6rem;
@@ -748,7 +748,7 @@ sup.cite {
 .pricing-note,
 .pricing-hours {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-body);
   line-height: 1.55;
   margin-bottom: 1rem;
@@ -796,7 +796,7 @@ sup.cite {
 
 .pricing-table td {
   padding: 1.15rem 0;
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-body);
   border-bottom: 1px solid var(--color-border);
   vertical-align: middle;
@@ -1061,7 +1061,7 @@ sup.cite {
 
 .schedule-item-desc {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-body);
   line-height: 1.6;
   padding: 1.25rem 1.5rem;
@@ -1114,7 +1114,7 @@ sup.cite {
 
 .team-body p {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.55;
   color: var(--color-text-body);
   margin-bottom: 0.85rem;
@@ -1138,7 +1138,7 @@ sup.cite {
 
 .sign-off-together {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   font-style: italic;
   color: var(--color-text-body);
   margin-bottom: 1.25rem;
@@ -1152,7 +1152,7 @@ sup.cite {
 
 .sign-off-name {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-navy);
   display: flex;
@@ -1256,7 +1256,7 @@ sup.cite {
 .faq-item.open .faq-q { color: var(--color-coral-dark); }
 .faq-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s ease; }
 .faq-item.open .faq-body { max-height: 600px; }
-.faq-a { font-family: var(--font-nav); font-size: 15px; line-height: 1.55; color: var(--color-text-body); padding-bottom: 1.5rem; }
+.faq-a { font-family: var(--font-nav); font-size: 1rem; line-height: 1.55; color: var(--color-text-body); padding-bottom: 1.5rem; }
 .faq-a p { margin: 0 0 0.65rem 0; }
 .faq-a p:last-child { margin-bottom: 0; }
 .faq-a ul { list-style: disc; margin: 0.4rem 0 0.65rem 1.25rem; padding: 0; }
@@ -1327,7 +1327,7 @@ sup.cite {
 
 .thankyou-body {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-light-75);
   line-height: 1.6;
   max-width: 44ch;
@@ -1405,10 +1405,10 @@ sup.cite {
 
 .pe-table   { border-collapse: collapse; font-family: var(--font-nav); border-spacing: 0; }
 .pe-days    { padding: 5px 0; color: var(--color-navy); font-size: 17px; white-space: nowrap; width: 3.5rem; }
-.pe-unit    { padding: 5px 0; color: var(--color-text-muted); font-size: 15px; white-space: nowrap; width: 4rem; }
-.pe-dash    { padding: 5px 0.3rem 5px 0.5rem; color: var(--color-text-muted); font-size: 15px; text-align: center; white-space: nowrap; width: 2rem; }
+.pe-unit    { padding: 5px 0; color: var(--color-text-muted); font-size: 1rem; white-space: nowrap; width: 4rem; }
+.pe-dash    { padding: 5px 0.3rem 5px 0.5rem; color: var(--color-text-muted); font-size: 1rem; text-align: center; white-space: nowrap; width: 2rem; }
 .pe-amount  { padding: 5px 0; color: var(--color-coral); font-weight: 500; font-size: 17px; white-space: nowrap; text-align: right; width: 4.2rem; }
-.pe-freq    { padding: 5px 0 5px 0.5rem; color: var(--color-text-muted); font-size: 15px; white-space: nowrap; }
+.pe-freq    { padding: 5px 0 5px 0.5rem; color: var(--color-text-muted); font-size: 1rem; white-space: nowrap; }
 
 .pricing-right-spacer   { height: 2.8rem; }
 .pricing-source-top     { margin-top: 0.5rem; }
@@ -1506,7 +1506,7 @@ sup.cite {
   .cg-new-photo{ position: relative; height: 320px; order: -1; }
   .cg-new-text { padding: 3rem 1.5rem; gap: 1rem; }
   .cg-new-text .cg-h2   { font-size: 34px; }
-  .cg-new-text .cg-body { font-size: 15px; }
+  .cg-new-text .cg-body { font-size: 1rem; }
 
   .pricing       { padding: 3rem 1.5rem; }
   .pricing-title { font-size: 34px; }
@@ -1682,7 +1682,7 @@ sup.cite {
 .wl-field input,
 .wl-field select {
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-light);
   background: rgba(255,255,255,0.08);
   border: 1.5px solid rgba(196,187,234,0.35);
@@ -1729,7 +1729,7 @@ sup.cite {
   align-items: center;
   gap: 0.5rem;
   font-family: var(--font-nav);
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--color-text-light-75);
   cursor: pointer;
 }
@@ -1753,7 +1753,7 @@ sup.cite {
   border: none;
   padding: 14px;
   border-radius: 100px;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: var(--font-body);
   cursor: pointer;
