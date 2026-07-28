@@ -492,8 +492,6 @@ sup.cite {
   text-decoration: none;
 }
  
-.research-toggle:hover { color: var(--color-navy); }
- 
 .toggle-arrow {
   display: inline-block;
   flex-shrink: 0;
