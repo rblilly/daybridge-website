@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Waitlist — Daybridge, Memory Care in Ravenswood, Chicago</title>
+  <meta name="description" content="Join the Daybridge waitlist. A daytime community designed for people living with memory loss and dementia. Coming to Ravenswood, Chicago, Spring 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://thedaybridge.com/waitlist" />
+
+  <style>
+    /* ── Waitlist page overrides ── */
+    .wl-page {
+      background: var(--color-navy);
+      min-height: calc(100vh - 70px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem 6rem;
+    }
+
+    .wl-page-inner {
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .wl-page-eyebrow {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--color-text-light-55);
+      margin-bottom: 1rem;
+    }
+
+    .wl-page-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 500;
+      color: var(--color-text-light);
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+    }
+
+    .wl-page-h1 em {
+      color: var(--color-honey);
+      font-style: italic;
+    }
+
+    .wl-page-intro {
+      font-family: var(--font-nav);
+      font-size: 16px;
+      color: var(--color-text-light-75);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Form card */
+    .wl-form-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(196,187,234,0.25);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+    }
+
+    .wl-field-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .wl-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .wl-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .wl-field label {
+      font-family: var(--font-body);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-text-light-75);
+    }
+
+    .wl-field input,
+    .wl-field select {
+      font-family: var(--font-nav);
+      font-size: 14px;
+      color: var(--color-text-light);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(196,187,234,0.25);
+      border-radius: 8px;
+      padding: 10px 14px;
+      width: 100%;
+      transition: border-color 0.15s;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .wl-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1L6 7L11 1' stroke='rgba(250,247,242,0.5)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+      cursor: pointer;
+    }
+
+    .wl-field select option {
+      background: var(--color-navy);
+      color: var(--color-text-light);
+    }
+
+    .wl-field input::placeholder {
+      color: rgba(250,247,242,0.35);
+    }
+
+    .wl-field input:focus,
+    .wl-field select:focus {
+      outline: none;
+      border-color: var(--color-cornflower);
+    }
+
+    .wl-radio-group {
+      display: flex;
+      gap: 1.5rem;
+      padding-top: 2px;
+    }
+
+    .wl-radio-label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-nav);
+      font-size: 14px;
+      color: var(--color-text-light-75);
+      cursor: pointer;
+    }
+
+    .wl-radio-label input[type="radio"] {
+      width: auto;
+      accent-color: var(--color-coral);
+      cursor: pointer;
+    }
+
+    .wl-divider {
+      border: none;
+      border-top: 1px solid rgba(196,187,234,0.15);
+      margin: 1.75rem 0;
+    }
+
+    .wl-page-submit {
+      width: 100%;
+      background: var(--color-coral);
+      color: var(--color-white);
+      border: none;
+      padding: 14px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      letter-spacing: 0.02em;
+      transition: background 0.15s;
+    }
+
+    .wl-page-submit:hover { background: var(--color-coral-dark); }
+
+    .wl-page-spam {
+      font-family: var(--font-nav);
+      font-size: 12px;
+      color: var(--color-text-light-55);
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .wl-referral-note {
+      font-family: var(--font-nav);
+      font-size: 13px;
+      color: var(--color-text-light-55);
+      text-align: center;
+      margin-top: 1.75rem;
+    }
+
+    .wl-referral-note a {
+      color: var(--color-cornflower);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .wl-referral-note a:hover { color: var(--color-text-light); }
+
+    @media (max-width: 560px) {
+      .wl-field-group { grid-template-columns: 1fr; }
+      .wl-field.full  { grid-column: 1; }
+      .wl-page        { padding: 3rem 1.25rem 4rem; }
+      .wl-form-card   { padding: 1.75rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Daybridge" height="36"></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+    <div class="nav-links" id="nav-links">
+      <a href="how-we-care.html" class="nav-link">How We Care</a>
+      <a href="caregivers.html"  class="nav-link">For Caregivers</a>
+      <a href="membership.html"  class="nav-link">Membership & Pricing</a>
+      <a href="faq.html"         class="nav-link">FAQ</a>
+      <a href="about-us.html"    class="nav-link">About Us</a>
+      <div class="nav-btns">
+        <a href="waitlist.html" class="nav-cta">Join the Waitlist</a>
+        <a href="tel:3125471718" class="nav-phone">(312) 547-1718</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wl-page">
+    <div class="wl-page-inner">
+
+      <p class="wl-page-eyebrow">Coming to Ravenswood, Chicago · Spring 2027</p>
+      <h1 class="wl-page-h1"><em>Start</em> the conversation.</h1>
+      <p class="wl-page-intro">Within 48 hours, we'll reach out personally to answer your questions and walk you through how Daybridge works. No pressure, just clear answers.</p>
+
+      <form class="wl-form-card" name="waitlist" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="waitlist" />
+
+        <div class="wl-field-group">
+          <div class="wl-field">
+            <label for="input-name">Full name</label>
+            <input type="text" id="input-name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="wl-field">
+            <label for="input-email">Email address</label>
+            <input type="email" id="input-email" name="email" placeholder="jane@email.com" required />
+          </div>
+          <div class="wl-field">
+            <label for="input-phone">Phone number</label>
+            <input type="tel" id="input-phone" name="phone" placeholder="(312) 555-0100" />
+          </div>
+          <div class="wl-field">
+            <label for="input-zip">Zip code</label>
+            <input type="text" id="input-zip" name="zip" placeholder="60640" maxlength="5" />
+          </div>
+        </div>
+
+        <hr class="wl-divider" />
+
+        <div class="wl-field-group">
+          <div class="wl-field">
+            <label>Service is for</label>
+            <div class="wl-radio-group" role="group" aria-label="Service is for">
+              <label class="wl-radio-label">
+                <input type="radio" name="service-for" value="Myself" /> Myself
+              </label>
+              <label class="wl-radio-label">
+                <input type="radio" name="service-for" value="A loved one" /> A loved one
+              </label>
+            </div>
+          </div>
+          <div class="wl-field">
+            <label for="input-days">Days per week</label>
+            <select id="input-days" name="days-per-week">
+              <option value="" disabled selected>Select…</option>
+              <option value="2">2 days</option>
+              <option value="3">3 days</option>
+              <option value="4">4 days</option>
+              <option value="5">5 days</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="wl-divider" />
+
+        <button class="wl-page-submit" type="submit">Join the Waitlist</button>
+        <p class="wl-page-spam">We'll be in touch within 48 hours. No spam, ever.</p>
+
+      </form>
+
+      <p class="wl-referral-note">Are you a referring provider? <a href="referral.html">Get in touch here →</a></p>
+
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', function () {
+        const open = navLinks.classList.toggle('open');
+        this.setAttribute('aria-expanded', open);
+        this.innerHTML = open ? '&#10005;' : '&#9776;';
+      });
+    }
+  </script>
+
+</body>
+</html>
