@@ -55,7 +55,7 @@
       </div>
       <div class="card">
         <h3 class="card-title">For caregivers, too</h3>
-        <p class="card-body">Designed to support an entire family, not just the member. We equip caregivers with the time, tools, and support to navigate with confidence.</p>
+        <p class="card-body">Designed to support an entire family, not just the member. We give caregivers the time, tools, and confidence to navigate what's ahead.</p>
         <div class="card-details">
           <p><span class="card-lead">Reliable respite.</span> Time every week to work, rest, or simply breathe.</p>
           <p><span class="card-lead">Support for home.</span> Training and resources to strengthen care outside our center.</p>
@@ -133,14 +133,9 @@
     
     <p class="schedule-note">Sample schedule, subject to change</p>
 
-    <button class="research-toggle" aria-expanded="false" aria-controls="schedule-footnotes-list" id="research-btn">
-      View the research behind our program
-      <svg class="toggle-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-        <path d="M3.5 6.5L9 12L14.5 6.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </button>
+    <p class="research-toggle">View the research behind our program</p>
 
-    <div class="schedule-footnotes" id="schedule-footnotes-list" role="region" aria-labelledby="research-btn">
+    <div class="schedule-footnotes open" id="schedule-footnotes-list">
       <ol>
         <li>Giebel et al. (2020). Adult day services and dementia caregivers' daily affect: the role of distress response to behavioral and psychological symptoms. <em>BMC Geriatrics</em>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7190408/" target="_blank">pmc.ncbi.nlm.nih.gov</a></li>
         <li>Zhang et al. (2025). Associations of circadian rhythms with cognitive performance in patients with amnestic mild cognitive impairment. <em>Journal of Clinical Medicine</em>. <a href="https://doi.org/10.3390/jcm15083023" target="_blank">doi.org/10.3390/jcm15083023</a></li>
@@ -163,17 +158,6 @@
     </div>
     <div class="footer-copy">© 2026 Daybridge · hello@thedaybridge.com · <a href="tel:3125471718">(312) 547-1718</a></div>
   </footer>
-
-  <script>
-    const researchBtn = document.getElementById('research-btn');
-    if (researchBtn) {
-      researchBtn.addEventListener('click', function () {
-        const expanded = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', !expanded);
-        document.getElementById('schedule-footnotes-list').classList.toggle('open');
-      });
-    }
-  </script>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
