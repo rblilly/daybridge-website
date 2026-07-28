@@ -415,7 +415,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 0.6rem;
 }
 
-.card-title { color: var(--color-cornflower); }
+.card-title { color: var(--color-navy); }
 
 .card-body {
   font-family: var(--font-nav);
@@ -434,6 +434,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-direction: column;
   gap: 0.7rem;
   align-self: start;
+  list-style: disc;
+  padding-left: 1.1rem;
 }
 
 .card-details p {
@@ -444,7 +446,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .card-lead     { font-weight: 500; }
-.card-lead { color: var(--color-coral-dark); font-weight: 400; }
+.card-lead { color: var(--color-navy); font-weight: 600; }
 
 .coral    { color: var(--color-coral-dark); }
 .lavender { color: var(--color-cornflower); }
