@@ -471,6 +471,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .schedule-cta:hover { background: var(--color-coral-dark); }
 
+.how-teaser {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.how-teaser li {
+  list-style: disc;
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--color-text-body);
+  margin-left: 1.1rem;
+}
+
 /* Schedule citations */
 sup.cite {
   font-size: 0.65em;
