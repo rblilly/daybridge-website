@@ -1788,16 +1788,16 @@ sup.cite {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-light-75);
+  color: rgba(255,255,255,0.9);
 }
 
 .wl-field input,
 .wl-field select {
   font-family: var(--font-nav);
   font-size: 1rem;
-  color: var(--color-text-light);
-  background: rgba(255,255,255,0.2);
-  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #ffffff;
+  background: rgba(255,255,255,0.25);
+  border: 1.5px solid rgba(255,255,255,0.5);
   border-radius: 8px;
   padding: 11px 14px;
   min-height: 44px;
@@ -1817,7 +1817,7 @@ sup.cite {
 
 .wl-field select option {
   background: var(--color-navy);
-  color: var(--color-text-light);
+  color: rgba(255,255,255,0.5);
 }
 
 .wl-field input::placeholder {
@@ -1859,11 +1859,13 @@ sup.cite {
 }
 
 .wl-page-submit {
-  width: 100%;
+  width: auto;
   background: var(--color-coral);
   color: var(--color-white);
   border: none;
-  padding: 14px;
+  padding: 14px 48px;
+  display: block;
+  margin: 0 auto;
   border-radius: 100px;
   font-size: 1rem;
   font-weight: 500;
@@ -1892,7 +1894,7 @@ sup.cite {
 }
 
 .wl-referral-note a {
-  color: var(--color-cornflower);
+  color: var(--color-honey);
   text-decoration: none;
   transition: color 0.15s;
 }
