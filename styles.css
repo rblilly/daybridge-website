@@ -566,7 +566,7 @@ sup.cite {
 
 .schedule-preview {
   background: var(--color-linen);
-  padding: 4rem 4rem 5rem;
+  padding: 1.5rem 4rem 5rem;
 }
 
 .schedule-preview-eyebrow {
@@ -581,7 +581,7 @@ sup.cite {
 
 .schedule-preview-title {
   font-family: var(--font-display);
-  font-size: 36px;
+  font-size: 44px;
   font-weight: 500;
   color: var(--color-navy);
   line-height: 1.1;
@@ -635,7 +635,7 @@ sup.cite {
 
 @media (max-width: 768px) {
   .schedule-preview { padding: 3rem 1.5rem; }
-  .schedule-preview-title { font-size: 28px; }
+  .schedule-preview-title { font-size: 30px; }
   .schedule-preview-cards { grid-template-columns: 1fr; gap: 2rem; }
 }
 
