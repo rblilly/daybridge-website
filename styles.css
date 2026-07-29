@@ -564,6 +564,80 @@ sup.cite {
   text-underline-offset: 2px;
 }
 
+.schedule-preview {
+  background: var(--color-linen);
+  padding: 4rem 4rem 5rem;
+}
+
+.schedule-preview-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(27,43,75,0.5);
+  margin-bottom: 0.5rem;
+}
+
+.schedule-preview-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color-navy);
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-preview-sub {
+  font-family: var(--font-nav);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--color-text-body);
+  margin-bottom: 2.5rem;
+}
+
+.schedule-preview-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.schedule-preview-card {
+  border-top: 3px solid var(--color-navy);
+  padding-top: 1.25rem;
+}
+
+.schedule-preview-time {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-coral);
+  margin-bottom: 0.5rem;
+}
+
+.schedule-preview-card-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-navy);
+  margin-bottom: 0.6rem;
+}
+
+.schedule-preview-card-body {
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-body);
+}
+
+@media (max-width: 768px) {
+  .schedule-preview { padding: 3rem 1.5rem; }
+  .schedule-preview-title { font-size: 28px; }
+  .schedule-preview-cards { grid-template-columns: 1fr; gap: 2rem; }
+}
 
 /* ============================================================
    9. CAREGIVERS PAGE
