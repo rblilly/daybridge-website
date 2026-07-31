@@ -243,6 +243,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 6rem 4rem;
 }
 
+.hero-mobile-img { display: none; }
+
 .hero-eyebrow {
   font-family: var(--font-body);
   font-size: 11px;
