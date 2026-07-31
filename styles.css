@@ -661,9 +661,7 @@ sup.cite {
 }
 
 .cg-new-photo {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+  position: relative;
 }
 
 .cg-new-text .cg-eyebrow {
