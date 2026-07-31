@@ -1447,7 +1447,7 @@ sup.cite {
    16. FOOTER
    ============================================================ */
 .footer {
-  background: var(--color-navy);
+  background: linear-gradient(155deg, #7BAED6 0%, #4E82BE 100%);
   padding: 1.35rem 4rem;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1685,7 +1685,7 @@ sup.cite {
    21. STATEMENT SECTION
    ============================================================ */
 .statement {
-  background: var(--color-navy);
+  background: linear-gradient(155deg, #7BAED6 0%, #4E82BE 100%);
   padding: 5rem 4rem;
   text-align: center;
 }
