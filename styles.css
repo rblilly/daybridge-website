@@ -1785,7 +1785,7 @@ sup.cite {
 .wl-field label {
   font-family: var(--font-body);
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--color-navy);
@@ -1833,7 +1833,8 @@ sup.cite {
 .wl-radio-group {
   display: flex;
   gap: 1.5rem;
-  padding-top: 2px;
+  padding-top: 1.5px;
+  margin-bottom: 2rem;
 }
 
 .wl-radio-label {
