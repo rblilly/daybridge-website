@@ -243,8 +243,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 6rem 4rem;
 }
 
-.hero-mobile-img { display: none; }
-
 .hero-eyebrow {
   font-family: var(--font-body);
   font-size: 11px;
@@ -1706,7 +1704,7 @@ sup.cite {
    ============================================================ */
 .wl-page {
   background: var(--color-linen);
-  min-height: calc(100vh - 70px);
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1839,7 +1837,7 @@ sup.cite {
   gap: 0.5rem;
   font-family: var(--font-nav);
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--color-text-body);
   cursor: pointer;
 }
 
