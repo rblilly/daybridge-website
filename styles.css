@@ -951,7 +951,7 @@ sup.cite {
    11. WAITLIST FORM
    ============================================================ */
 .waitlist {
-  background: var(--color-navy);
+  background: var(--color-linen);
   padding: 4.5rem 4rem 5rem;
   text-align: center;
   scroll-margin-top: 60px;
@@ -963,7 +963,7 @@ sup.cite {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-text-light-55);
+  color: rgba(255,255,255,0.82);
   margin-bottom: 1.25rem;
 }
 
@@ -971,13 +971,13 @@ sup.cite {
   font-family: var(--font-display);
   font-size: 48px;
   font-weight: 500;
-  color: var(--color-text-light);
+  color: var(--color-navy);
   margin-bottom: 3rem;
   line-height: 1.1;
 }
 
 .wl-h2 em {
-  color: var(--color-honey);
+  color: var(--color-navy);
   font-style: italic;
 }
 
@@ -1527,15 +1527,15 @@ sup.cite {
 .db-name-cell  { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
 
 .wl-eyebrow-line2 { display: inline-block; margin-top: 0.35rem; }
-.wl-intro         { font-family: var(--font-nav); font-size: clamp(15px, 1.2vw, 17px); color: var(--color-text-light-75); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center; }
+.wl-intro         { font-family: var(--font-nav); font-size: clamp(15px, 1.2vw, 17px); color: var(--color-text-body); line-height: 1.55; max-width: 640px; margin: -1.5rem auto 2.5rem; text-align: center; }
 .wl-input-zip     { width: 120px; text-align: center; }
 .wl-form-spacer   { height: 0.75rem; }
 .wl-submit-wrap   { display: flex; justify-content: center; }
-.wl-spam-note     { font-family: var(--font-nav); font-size: 13px; color: var(--color-text-light-55); margin-top: 1.25rem; text-align: center; }
+.wl-spam-note     { font-family: var(--font-nav); font-size: 13px; color: var(--color-text-muted); margin-top: 1.25rem; text-align: center; }
 
-.wl-call-note { font-family: var(--font-nav); font-size: 12px; color: var(--color-text-light-55); margin-top: 0.5rem; text-align: center; }
+.wl-call-note { font-family: var(--font-nav); font-size: 12px; color: var(--color-cornflower); margin-top: 0.5rem; text-align: center; }
 .wl-call-note a { color: var(--color-cornflower); text-decoration: none; transition: color 0.15s; }
-.wl-call-note a:hover { color: var(--color-text-light); }
+.wl-call-note a:hover { color: var(--color-navy); }
 
 
 /* ============================================================
@@ -1709,7 +1709,7 @@ sup.cite {
    22. WAITLIST PAGE
    ============================================================ */
 .wl-page {
-  background: linear-gradient(to bottom, #8BBFE8, #4A7FBF);
+  background: var(--color-linen);
   min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
@@ -1729,7 +1729,7 @@ sup.cite {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-text-light-55);
+  color: var(--color-cornflower;
   margin-bottom: 1rem;
 }
 
@@ -1737,14 +1737,14 @@ sup.cite {
   font-family: var(--font-display);
   font-size: clamp(36px, 5vw, 52px);
   font-weight: 500;
-  color: var(--color-text-light);
+  color: var(--color-navy);
   line-height: 1.1;
   margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .wl-page-h1 em {
-  color: var(--color-honey);
+  color: var(--color-navy);
   font-style: italic;
 }
 
@@ -1788,16 +1788,16 @@ sup.cite {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--color-navy);
 }
 
 .wl-field input,
 .wl-field select {
   font-family: var(--font-nav);
   font-size: 1rem;
-  color: #1B2B4B;
-  background: rgba(255,255,255,0.35);
-  border: 1.5px solid rgba(255,255,255,0.7);
+  color: var(--color-navy);
+  background: var(--color-white);
+  border: 1.5px solid rgba(27,43,75,0.18);
   border-radius: 8px;
   padding: 11px 14px;
   min-height: 44px;
@@ -1816,8 +1816,8 @@ sup.cite {
 }
 
 .wl-field select option {
-  background: var(--color-navy);
-  color: rgba(255,255,255,0.5);
+  background: var(--color-white);
+  color: rgba(27,43,75,0.18);
 }
 
 .wl-field input::placeholder {
@@ -1884,22 +1884,6 @@ sup.cite {
   text-align: center;
   margin-top: 1rem;
 }
-
-.wl-referral-note {
-  font-family: var(--font-nav);
-  font-size: 13px;
-  color: var(--color-text-light-55);
-  text-align: center;
-  margin-top: 1.75rem;
-}
-
-.wl-referral-note a {
-  color: var(--color-honey);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.wl-referral-note a:hover { color: var(--color-text-light); }
 
   @media (max-width: 560px) {
     .wl-field-group { grid-template-columns: 1fr; }
