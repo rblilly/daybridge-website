@@ -172,11 +172,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       cgSlides[cgCurrent].classList.add('active');
       cgDots[cgCurrent].classList.add('active');
     }
-
-    setInterval(() => cgGoTo((cgCurrent + 1) % cgSlides.length), 7000);
     ['cp-carousel-1.png', 'cp-bottom-right.jpg', 'carousel3.jpg', 'Cp-top-left.jpg'].forEach(function(src) {
-  new Image().src = src;
-});
+      new Image().src = src;
+    });
+    setInterval(() => cgGoTo((cgCurrent + 1) % cgSlides.length), 7000);
+    
   </script>
 
 </body>
