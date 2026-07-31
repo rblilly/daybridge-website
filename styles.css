@@ -1911,3 +1911,10 @@ sup.cite {
   cursor: pointer;
   flex-shrink: 0;
 }
+
+.wl-field-hint {
+  font-family: var(--font-nav);
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
