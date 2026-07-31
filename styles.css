@@ -756,6 +756,7 @@ sup.cite {
   object-fit: cover;
   object-position: center;
   display: block;
+  color: transparent;
 }
 
 .cg-carousel-dots {
