@@ -130,13 +130,87 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
   <!-- WAITLIST -->
-  <section class="waitlist" id="waitlist">
-    <p class="wl-eyebrow">Coming Soon<br><span class="wl-eyebrow-line2">Ravenswood, Chicago</span></p>
-    <h2 class="wl-h2">Join the Waitlist.</h2>
-    <p class="wl-intro">Within 48 hours, we'll reach out personally to answer your questions and walk you through how Daybridge works. No pressure, just clear answers.</p>
-    <a href="waitlist.html" class="btn btn-primary" style="display:inline-block; margin-top: 0.5rem;">Join the Waitlist →</a>
-  </section>
+  <section class="wl-page">
+    <div class="wl-page-inner">
 
+      <p class="wl-page-eyebrow">Coming Soon to Ravenswood, Chicago</p>
+      <h1 class="wl-page-h1">Join the Waitlist.</h1>
+
+      <form class="wl-form-card" name="waitlist" method="POST" data-netlify="true" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="waitlist" />
+
+        <div class="wl-field-group">
+          <div class="wl-field">
+            <label for="input-name">Full name</label>
+            <input type="text" id="input-name" name="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="wl-field">
+            <label for="input-email">Email address</label>
+            <input type="email" id="input-email" name="email" placeholder="jane@email.com" required />
+          </div>
+          <div class="wl-field">
+            <label for="input-phone">Phone number</label>
+            <input type="tel" id="input-phone" name="phone" placeholder="(312) 555-0100" />
+          </div>
+          <div class="wl-field">
+            <label for="input-zip">Zip code</label>
+            <input type="text" id="input-zip" name="zip" placeholder="60640" maxlength="5" />
+          </div>
+        </div>
+
+        <hr class="wl-divider" />
+
+        <div class="wl-field-group">
+          <div class="wl-field">
+            <label>Who is this service for?</label>
+            <p class="wl-field-hint">This helps us share the most relevant information.</p>
+            <div class="wl-radio-group" role="group" aria-label="Service is for">
+              <label class="wl-radio-label">
+                <input type="radio" name="service-for" value="Myself" /> Myself
+              </label>
+              <label class="wl-radio-label">
+                <input type="radio" name="service-for" value="A loved one" /> A loved one
+              </label>
+            </div>
+          </div>
+          
+        <div class="wl-field">
+          <label class="wl-field-label">Are you open to a quick call from our team?</label>
+          <p class="wl-field-hint">If you respond yes, we will reach out within 48 hours to answer any questions.</p>
+          <div class="wl-radio-group">
+            <label class="wl-radio-label">
+              <input type="radio" name="open-to-call" value="Yes" /> Yes
+            </label>
+            <label class="wl-radio-label">
+              <input type="radio" name="open-to-call" value="No" /> No
+            </label>
+          </div>
+        </div>
+
+          <div class="wl-field">
+            <label for="input-days">Days per week</label>
+            <select id="input-days" name="days-per-week">
+              <option value="" disabled selected>Select…</option>
+              <option value="2">2 days</option>
+              <option value="3">3 days</option>
+              <option value="4">4 days</option>
+              <option value="5">5 days</option>
+              <option value="unsure">Unsure</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="wl-divider" />
+
+        <button class="wl-page-submit" type="submit">Join the Waitlist</button>
+        <p class="wl-privacy-note">🔒 Your information is never sold or shared.</p>
+        <p class="wl-page-spam">Join our waitlist for opening updates and invites to special events, such as in-person and virtual brain health and caregiver education sessions.</p>
+
+      </form>
+
+    </div>
+  </section>
+    
   <footer class="footer">
     <a href="index.html" class="footer-logo"><img src="Daybridge_bw.png" alt="Daybridge" height="28"></a>
     <div class="footer-links">
@@ -155,35 +229,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         const open = navLinks.classList.toggle('open');
         this.setAttribute('aria-expanded', open);
         this.innerHTML = open ? '&#10005;' : '&#9776;';
-      });
-    }
-    document.querySelectorAll('.wl-pill').forEach(pill => {
-      pill.addEventListener('click', function () {
-        const group = this.closest('.wl-pills');
-        group.querySelectorAll('.wl-pill').forEach(p => { p.classList.remove('active'); p.setAttribute('aria-pressed','false'); });
-        this.classList.add('active');
-        this.setAttribute('aria-pressed','true');
-        const hidden = group.nextElementSibling;
-        if (hidden && hidden.classList.contains('wl-pill-value')) hidden.value = this.textContent.trim();
-        group.classList.remove('error');
-        const err = group.parentElement.querySelector('.wl-pill-error');
-        if (err) err.classList.remove('visible');
-      });
-    });
-    const form = document.querySelector('form[name="waitlist"]');
-    if (form) {
-      form.addEventListener('submit', function (e) {
-        let valid = true;
-        this.querySelectorAll('.wl-pill-value').forEach(hidden => {
-          if (!hidden.value) {
-            valid = false;
-            const group = hidden.previousElementSibling;
-            const err = hidden.parentElement.querySelector('.wl-pill-error');
-            group.classList.add('error');
-            if (err) err.classList.add('visible');
-          }
-        });
-        if (!valid) e.preventDefault();
       });
     }
   </script>
