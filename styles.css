@@ -14,7 +14,7 @@
 :root {
   /* Core brand palette */
   --color-coral:        #F28F7A;;   /* primary CTA, buttons */
-  --color-coral-dark:   #F28F7A;   /* coral hover state */
+  --color-coral-dark:   #D4614A;   /* coral hover state */
   --color-navy:         #1B2B4B;   /* all navy uses */
   --color-cornflower:   #6FB5FD;   /* logo, headline accent, secondary CTA */
   --color-honey:        #FED959;   /* accent, waitlist headline */
@@ -1408,7 +1408,7 @@ sup.cite {
 .thankyou-logo {
   display: block;
   margin: 0 auto 3rem;
-  width: 160px;
+  width: 200px;
 }
 
 .thankyou-h1 {
