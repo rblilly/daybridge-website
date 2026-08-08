@@ -1901,14 +1901,24 @@ sup.cite {
 }
 
 .wl-radio-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
   width: 16px;
   height: 16px;
   min-height: unset;
   padding: 0;
   margin: 0;
-  accent-color: var(--color-coral);
+  border: 2px solid rgba(27, 43, 75, 0.3);
+  border-radius: 50%;
+  background: white;
   cursor: pointer;
   flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.wl-radio-label input[type="radio"]:checked {
+  border-color: var(--color-coral);
+  background: radial-gradient(circle, var(--color-coral) 38%, white 40%);
 }
 
 .wl-field-hint {
