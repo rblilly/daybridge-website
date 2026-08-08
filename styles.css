@@ -1406,15 +1406,9 @@ sup.cite {
 }
 
 .thankyou-logo {
-  font-family: 'Fraunces', serif;
-  font-size: 28px;
-  font-weight: 500;
-  color: var(--color-text-light);
-  letter-spacing: 0.02em;
-  text-decoration: none;
   display: block;
-  text-align: center;
   margin: 0 auto 3rem;
+  width: 160px;
 }
 
 .thankyou-h1 {
