@@ -1749,6 +1749,10 @@ sup.cite {
   text-align: center;
 }
 
+.wl-page-intro p + p {
+  margin-top: 0.75rem;
+}
+
 /* Form card */
 .wl-form-card {
   background: transparent;
