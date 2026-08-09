@@ -14,7 +14,7 @@
 :root {
   /* Core brand palette */
   --color-coral:        #F28F7A;;   /* primary CTA, buttons */
-  --color-coral-dark:   #F28F7A;   /* coral hover state */
+  --color-coral-dark:   #D4614A;   /* coral hover state */
   --color-navy:         #1B2B4B;   /* all navy uses */
   --color-cornflower:   #6FB5FD;   /* logo, headline accent, secondary CTA */
   --color-honey:        #FED959;   /* accent, waitlist headline */
@@ -1406,15 +1406,9 @@ sup.cite {
 }
 
 .thankyou-logo {
-  font-family: 'Fraunces', serif;
-  font-size: 28px;
-  font-weight: 500;
-  color: var(--color-text-light);
-  letter-spacing: 0.02em;
-  text-decoration: none;
   display: block;
-  text-align: center;
   margin: 0 auto 3rem;
+  width: 200px;
 }
 
 .thankyou-h1 {
@@ -1901,14 +1895,24 @@ sup.cite {
 }
 
 .wl-radio-label input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
   width: 16px;
   height: 16px;
   min-height: unset;
   padding: 0;
   margin: 0;
-  accent-color: var(--color-coral);
+  border: 2px solid rgba(27, 43, 75, 0.3);
+  border-radius: 50%;
+  background: white;
   cursor: pointer;
   flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.wl-radio-label input[type="radio"]:checked {
+  border-color: var(--color-coral);
+  background: radial-gradient(circle, var(--color-coral) 38%, white 40%);
 }
 
 .wl-field-hint {
